@@ -1,0 +1,64 @@
+{
+    "categories": [
+        {
+            "number": "1",
+            "description": "Musicians/Musical groups"
+            
+        },
+        {
+            "number": "2",
+            "description": "Vegetables"
+            
+        },
+        {
+            "number": "3",
+            "description": "Reasons to have a party"
+            
+        },
+        {
+            "number": "4",
+            "description": "Villians/Monsters"
+            
+        },
+        {
+            "number": "5",
+            "description": "Things that weigh less than a pound"
+            
+        },
+        {
+            "number": "6",
+            "description": "Excuses for being late"
+            
+        },
+        {
+            "number": "7",
+            "description": "Items in this room"
+            
+        },
+        {
+            "number": "8",
+            "description": "House decorations"
+            
+        },
+        {
+            "number": "9",
+            "description": "Things that are round"
+            
+        },
+        {
+            "number": "10",
+            "description": "Ways to say \"Yes\""
+            
+        },
+        {
+            "number": "11",
+            "description": "Snacks"
+            
+        },
+        {
+            "number": "12",
+            "description": "Things that have numbers"
+            
+        }
+    ]
+}
