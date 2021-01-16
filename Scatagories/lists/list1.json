@@ -1,64 +1,1028 @@
 {
-    "categories": [
+    "lists": [
         {
-            "number": "1",
-            "description": "Musicians/Musical groups"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Musicians/Musical groups"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Vegetables"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Reasons to have a party"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Villians/Monsters"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Things that weigh less than a pound"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Excuses for being late"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Items in this room"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "House decorations"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Things that are round"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Ways to say \"Yes\""
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Snacks"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Things that have numbers"
+                    
+                }
+            ]
         },
         {
-            "number": "2",
-            "description": "Vegetables"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things you can't see"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Countries"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Things with windows"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "5-Letter words"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Artists"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Found in the backyard"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Leisure activities"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Found in a dorm"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Ingredients"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Things that are cold"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Something you look forward too"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Things you can collect"
+                    
+                }
+            ]
         },
         {
-            "number": "3",
-            "description": "Reasons to have a party"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Flowers"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Things that sparkle"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Types of cereal"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Itesm you save up to buy"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Otherworldly"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Things that are scary"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "TV shows from before you were born"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Found in the woods"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Reasons for sending a card"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Things you can do in 5 minutes or less"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Places in your hometown"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Found in a basement"
+                    
+                }
+            ]
         },
         {
-            "number": "4",
-            "description": "Villians/Monsters"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Items in your purse/wallet"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Stuffed animal names"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Things you plug in"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Foods kids hate"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Found in a souvenir shop"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Something you keep hidden"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Celebrities"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Things you empty"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Words ending in \"ly\""
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Expressions"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "THings to do on a rainy day"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Animals"
+                    
+                }
+            ]
         },
         {
-            "number": "5",
-            "description": "Things that weigh less than a pound"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Found in a bakery"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Household chores"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Ways to get there from here"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Vacation destinations"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Things in a science fiction movie"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Mobile apps"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Things you shouldn't touch"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Lessens you sign up for"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Memorabilia"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Items in a vending machine"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Personality traits"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Things that make you laugh"
+                    
+                }
+            ]
         },
         {
-            "number": "6",
-            "description": "Excuses for being late"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "World records"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Found on an island"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Ways to cool off"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Things you shout"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Favors people ask for"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Store names"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Things you replace"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Found in the kitchen"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Items you fold"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "TV shows"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Action words"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Things with spots"
+                    
+                }
+            ]
         },
         {
-            "number": "7",
-            "description": "Items in this room"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things with balls"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Reasons to shop"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Things you mix up"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "People in uniforms"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Items you keep forever"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Hot places"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Sounds"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Famous Athletes"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Found in a grocery store"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Kinds of candy"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Names for girls"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "THings you wear at night"
+                    
+                }
+            ]
         },
         {
-            "number": "8",
-            "description": "House decorations"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things with tails"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Something you're afraid of"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Languages"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Things with stripes"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Fictional characters"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Reasons to procrastinate"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Items that come in the mail"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Historical figures"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Things that grow"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Sandwiches"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Found in an attic"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Dangerous occupations"
+                    
+                }
+            ]
         },
         {
-            "number": "9",
-            "description": "Things that are round"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things that glow"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Movie titles"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Things you carry"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Foods you fry"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Expensive items"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Fads"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Arts and crafts activities"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Things you can squeeze"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Ends up in lost and found"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Furniture"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Things you do online"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Places to go on a date"
+                    
+                }
+            ]
         },
         {
-            "number": "10",
-            "description": "Ways to say \"Yes\""
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things that smell good"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Gossip topics"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "After-school activities"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Found a desert"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Bad habits"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Things that are yellow"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Clothing brands"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Things made of metal"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Places to bring kids"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Things that are blue"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Junk food"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Book titles"
+                    
+                }
+            ]
         },
         {
-            "number": "11",
-            "description": "Snacks"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things a baby does"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Ways to say \"hi\" and \"bye\""
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Shiny things"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Footwear"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Birds"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Things that jump or bounce"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Types of pie"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Found on public transportation"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "TV shows and movies you don't like"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Reasons to skip school/work"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Things that are soft"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Words with double letters"
+                    
+                }
+            ]
         },
         {
-            "number": "12",
-            "description": "Things that have numbers"
-            
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things you don't want in the house"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Colors"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "THings you learned as a kid"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Seen at a concert"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "People you admire"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "On a menu"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Found at the beach"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Comes in pairs of sets"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Things at a birthday"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Nicknames"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "In a freezer"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "THings that need to be cleaned"
+                    
+                }
+            ]
+        },
+        {
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Ice cream flavors"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Things you forget to pack"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Names for pets"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Things you dream about"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Found in fairy tales"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Reasons to be early"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Loud things"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Salty foods"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Found in a garage"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Accessories"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Social media sites"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Things you fill"
+                    
+                }
+            ]
+        },
+        {
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Professions"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Things you can do with your feet"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Names for boys"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Words ending in \"ing\""
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Boring things"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Types of technology"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Things you eat with a spoon"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Found in a junk drawer"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Notorious people"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Things that are bright"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Necessary appointments"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Things you recycle"
+                    
+                }
+            ]
+        },
+        {
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Street names"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Activities for a day off"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Soups"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Found in a gym/fitness center"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Places you wouldn't live"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Allergies"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Seen at a mall"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Things you donate"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Terms of endearment"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Silent things"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Tourist attractions"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Places to live"
+                    
+                }
+            ]
+        },
+        {
+            "categories": [
+                {
+                    "number": "1",
+                    "description": "Things that blink"
+                    
+                },
+                {
+                    "number": "2",
+                    "description": "Foreign cities"
+                    
+                },
+                {
+                    "number": "3",
+                    "description": "Places to sit"
+                    
+                },
+                {
+                    "number": "4",
+                    "description": "Compliments"
+                    
+                },
+                {
+                    "number": "5",
+                    "description": "Things that are sticky"
+                    
+                },
+                {
+                    "number": "6",
+                    "description": "Song titles"
+                    
+                },
+                {
+                    "number": "7",
+                    "description": "Things you rent"
+                    
+                },
+                {
+                    "number": "8",
+                    "description": "Restaurants"
+                    
+                },
+                {
+                    "number": "9",
+                    "description": "Things that smell bad"
+                    
+                },
+                {
+                    "number": "10",
+                    "description": "Types of exercise"
+                    
+                },
+                {
+                    "number": "11",
+                    "description": "Things you avoid"
+                    
+                },
+                {
+                    "number": "12",
+                    "description": "Smaller than your first"
+                    
+                }
+            ]
         }
     ]
 }
