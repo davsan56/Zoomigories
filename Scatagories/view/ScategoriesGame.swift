@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScategoriesGame: View {
-    @ObservedObject var networkManager = NetworkManager()
+    @ObservedObject var networkManager: NetworkManager
     
     @ViewBuilder
     var body: some View {
@@ -21,19 +21,17 @@ struct ScategoriesGame: View {
         } else {
             ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, content: {
                 VStack {
-                    ForEach(networkManager.categoryList?.categories ?? []) { category in
-                        ScategoriesTextField(category: category)
-                    }
+                    PointsView(networkManager: networkManager)
+                    ListOfCategories(networkManager: networkManager, categories: networkManager.categoryList?.categories ?? [])
                 }
             })
+            .navigationTitle(Text("Scategories List \(networkManager.listToLoad)"))
         }
     }
 }
 
 struct ScategoriesGame_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ScategoriesGame();
-        }
+        ScategoriesGame(networkManager: NetworkManager())
     }
 }

@@ -13,7 +13,7 @@ struct ScatagoriesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ScategoriesGame()
+            HomeScreen()
         }
     }
 }

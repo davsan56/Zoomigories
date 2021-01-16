@@ -11,6 +11,8 @@ class NetworkManager: ObservableObject {
     @Published var categoryList: CategoryList? = nil
     @Published var error = false
     @Published var listToLoad: Int = 1
+    @Published var totalPointsThisRound: Int = 0
+    @Published var totalPoints: Int = 0
     
     let databaseManager = DatabaseManager()
     
