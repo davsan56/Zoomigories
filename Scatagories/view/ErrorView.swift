@@ -12,24 +12,15 @@ struct ErrorView: View {
     
     var body: some View {
         VStack {
-            Text("Error loading Scategories")
+            Text("Error loading Scategories list \(self.networkManager.listToLoad)")
             Divider()
-            Button(action: {
-                loadCategoryList()
-            }) {
-                Text("Retry")
-                    .foregroundColor(.white)
-            }
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(Color.blue)
-            .cornerRadius(5)
+            LoadingView(networkManager: networkManager)
         }
         .padding()
     }
     
     private func loadCategoryList() {
-        networkManager.loadFromJson(filename: "list1")
+        networkManager.getCategoryList()
     }
 }
 

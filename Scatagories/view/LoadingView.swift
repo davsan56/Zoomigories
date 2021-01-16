@@ -6,21 +6,38 @@
 //
 
 import SwiftUI
+import Combine
 
 struct LoadingView: View {
     @ObservedObject var networkManager: NetworkManager
     
+    @State var listNumber: String = "1"
+    
     var body: some View {
         VStack {
-            Text("Loading...")
-            ProgressView()
-                .progressViewStyle(CircularProgressViewStyle())
+            Text("Enter List Number")
+            HStack {
+                TextField("List number", text: $listNumber)
+                    .keyboardType(.numberPad)
+                Spacer()
+                Button(action: {
+                    loadCategoryList()
+                }) {
+                    Text("Load list")
+                        .foregroundColor(.white)
+                }
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(5)
+            }
+            Divider()
         }
-        .onAppear(perform: loadCategoryList)
+        .padding()
     }
     
     private func loadCategoryList() {
-        networkManager.loadFromJson(filename: "list1")
+        self.networkManager.listToLoad = Int(self.listNumber) ?? 1
+        networkManager.getCategoryList()
     }
 }
 
