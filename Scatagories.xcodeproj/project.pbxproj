@@ -24,6 +24,7 @@
 		864173FE25B37B9E00AD5625 /* ListOfCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173FD25B37B9E00AD5625 /* ListOfCategories.swift */; };
 		8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740025B37D0C00AD5625 /* HomeScreen.swift */; };
 		8641740425B382DF00AD5625 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740325B382DF00AD5625 /* PointsView.swift */; };
+		8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740625B3B4C600AD5625 /* PointStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		864173FD25B37B9E00AD5625 /* ListOfCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCategories.swift; sourceTree = "<group>"; };
 		8641740025B37D0C00AD5625 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		8641740325B382DF00AD5625 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		8641740625B3B4C600AD5625 /* PointStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
 				8641740025B37D0C00AD5625 /* HomeScreen.swift */,
 				8641740325B382DF00AD5625 /* PointsView.swift */,
+				8641740625B3B4C600AD5625 /* PointStepper.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */,
 				8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */,
 				8641738725B27D3A00AD5625 /* ScatagoriesApp.swift in Sources */,
+				8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */,
 				864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */,
 				8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */,
 				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,

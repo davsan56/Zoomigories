@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PointsView: View {
     @ObservedObject var networkManager: NetworkManager
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var body: some View {
         HStack {
@@ -18,6 +19,8 @@ struct PointsView: View {
                 networkManager.totalPoints += networkManager.totalPointsThisRound
                 networkManager.totalPointsThisRound = 0
                 networkManager.categoryList = nil
+                
+                self.mode.wrappedValue.dismiss()
             }) {
                 Text("Submit")
                     .foregroundColor(.white)

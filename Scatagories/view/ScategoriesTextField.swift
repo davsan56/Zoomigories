@@ -18,17 +18,20 @@ struct ScategoriesTextField: View {
     @ViewBuilder
     var body: some View {
         VStack {
-            HStack {
-                Text("\(category.number ?? "").")
-                TextField(category.categoryDescription ?? "", text: $text)
-                TextField("Points", text: $points)
-                    .keyboardType(.numberPad)
-                    .fixedSize()
-                    .onChange(of: points, perform: { value in
-                        networkManager.totalPointsThisRound += Int(value) ?? 0
-                    })
-            }
+            VStack {
+                HStack {
+                    Text("\(category.number ?? "").")
+                    TextField(category.categoryDescription ?? "", text: $text)
+                        .overlay(
+                            VStack {
+                                Divider()
+                                    .offset(x: 0, y: 15)
+                                }
+                        )
+                }
                 .padding()
+                PointStepper(networkManager: networkManager)
+            }
             Divider()
         }
     }
