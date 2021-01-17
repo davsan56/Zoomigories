@@ -25,6 +25,8 @@
 		8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740025B37D0C00AD5625 /* HomeScreen.swift */; };
 		8641740425B382DF00AD5625 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740325B382DF00AD5625 /* PointsView.swift */; };
 		8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740625B3B4C600AD5625 /* PointStepper.swift */; };
+		8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */; };
+		8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		8641740025B37D0C00AD5625 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		8641740325B382DF00AD5625 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		8641740625B3B4C600AD5625 /* PointStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStepper.swift; sourceTree = "<group>"; };
+		8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLetterPicker.swift; sourceTree = "<group>"; };
+		8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPointsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,14 +147,8 @@
 		8641739F25B2889400AD5625 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				8641738825B27D3A00AD5625 /* ScategoriesGame.swift */,
-				864173A225B289DA00AD5625 /* ScategoriesTextField.swift */,
-				864173AB25B343ED00AD5625 /* ErrorView.swift */,
-				864173AE25B3447F00AD5625 /* LoadingView.swift */,
-				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
-				8641740025B37D0C00AD5625 /* HomeScreen.swift */,
-				8641740325B382DF00AD5625 /* PointsView.swift */,
-				8641740625B3B4C600AD5625 /* PointStepper.swift */,
+				8641741025B4A6D300AD5625 /* game */,
+				8641740F25B4A6BA00AD5625 /* homescreen */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -162,6 +160,46 @@
 				864173D325B34E5D00AD5625 /* DatabaseManager.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		8641740F25B4A6BA00AD5625 /* homescreen */ = {
+			isa = PBXGroup;
+			children = (
+				8641740025B37D0C00AD5625 /* HomeScreen.swift */,
+				8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */,
+				8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */,
+			);
+			path = homescreen;
+			sourceTree = "<group>";
+		};
+		8641741025B4A6D300AD5625 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				8641741225B4A75C00AD5625 /* category */,
+				8641741125B4A6FC00AD5625 /* points */,
+				8641738825B27D3A00AD5625 /* ScategoriesGame.swift */,
+				864173AB25B343ED00AD5625 /* ErrorView.swift */,
+				864173AE25B3447F00AD5625 /* LoadingView.swift */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		8641741125B4A6FC00AD5625 /* points */ = {
+			isa = PBXGroup;
+			children = (
+				8641740625B3B4C600AD5625 /* PointStepper.swift */,
+				8641740325B382DF00AD5625 /* PointsView.swift */,
+			);
+			path = points;
+			sourceTree = "<group>";
+		};
+		8641741225B4A75C00AD5625 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				864173A225B289DA00AD5625 /* ScategoriesTextField.swift */,
+				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +322,13 @@
 				864173FE25B37B9E00AD5625 /* ListOfCategories.swift in Sources */,
 				864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */,
 				8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */,
+				8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */,
 				8641738725B27D3A00AD5625 /* ScatagoriesApp.swift in Sources */,
 				8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */,
 				864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */,
 				8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */,
 				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,
+				8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */,
 				864173A325B289DA00AD5625 /* ScategoriesTextField.swift in Sources */,
 				864173D425B34E5D00AD5625 /* DatabaseManager.swift in Sources */,
 				8641740425B382DF00AD5625 /* PointsView.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeScreen: View {
     @ObservedObject var networkManager = NetworkManager()
     
+    @ViewBuilder
     var body: some View {
         NavigationView {
             VStack {
@@ -22,7 +23,10 @@ struct HomeScreen: View {
                         .background(Color.blue)
                         .cornerRadius(5)
                 }
-                Text("Total points: \(networkManager.totalPoints)")
+                TotalPointsView(networkManager: networkManager)
+                    .padding([.top, .bottom])
+                RandomLetterPicker()
+//                    .padding([.leading, .trailing])
             }
         }
     }
