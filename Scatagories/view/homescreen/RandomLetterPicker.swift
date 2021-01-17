@@ -16,7 +16,7 @@ struct RandomLetterPicker: View {
     var body: some View {
         HStack {
             if !randomLetter.isEmpty {
-                Text("Random letter: \(randomLetter)")
+                Text("Letter: \(randomLetter)")
             }
             Button(action: {
                 self.randomLetter = randomLetters.randomElement() ?? ""

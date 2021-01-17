@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScategoriesGame: View {
     @ObservedObject var networkManager: NetworkManager
+    @StateObject var timerManager: TimerManager = TimerManager()
     
     @ViewBuilder
     var body: some View {
@@ -21,12 +22,29 @@ struct ScategoriesGame: View {
         } else {
             ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, content: {
                 VStack {
-                    PointsView(networkManager: networkManager)
+                    HStack {
+                        TimerView(timerManager: timerManager)
+                            .alert(isPresented: $timerManager.timerDone, content: {
+                                Alert(title: Text("Times up!"),
+                                      message: Text("Time to tally the points"),
+                                      dismissButton: .default(Text("OK")) {
+                                        disableCategoryTextFields()
+                                      })
+                            })
+                        PointsView(networkManager: networkManager)
+                    }
                     ListOfCategories(networkManager: networkManager, categories: networkManager.categoryList?.categories ?? [])
                 }
             })
+            .onAppear(perform: {
+                networkManager.stopEditing = false
+            })
             .navigationTitle(Text("Scategories List \(networkManager.listToLoad)"))
         }
+    }
+    
+    private func disableCategoryTextFields() {
+        networkManager.stopEditing = true
     }
 }
 

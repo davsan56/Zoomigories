@@ -27,6 +27,8 @@
 		8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740625B3B4C600AD5625 /* PointStepper.swift */; };
 		8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */; };
 		8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */; };
+		8641741525B4D11D00AD5625 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641741425B4D11D00AD5625 /* TimerView.swift */; };
+		8641741925B4D15800AD5625 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641741825B4D15800AD5625 /* TimerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		8641740625B3B4C600AD5625 /* PointStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStepper.swift; sourceTree = "<group>"; };
 		8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLetterPicker.swift; sourceTree = "<group>"; };
 		8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPointsView.swift; sourceTree = "<group>"; };
+		8641741425B4D11D00AD5625 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		8641741825B4D15800AD5625 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 		8641741025B4A6D300AD5625 /* game */ = {
 			isa = PBXGroup;
 			children = (
+				8641741725B4D12000AD5625 /* timer */,
 				8641741225B4A75C00AD5625 /* category */,
 				8641741125B4A6FC00AD5625 /* points */,
 				8641738825B27D3A00AD5625 /* ScategoriesGame.swift */,
@@ -200,6 +205,15 @@
 				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		8641741725B4D12000AD5625 /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				8641741425B4D11D00AD5625 /* TimerView.swift */,
+				8641741825B4D15800AD5625 /* TimerManager.swift */,
+			);
+			path = timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +337,7 @@
 				864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */,
 				8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */,
 				8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */,
+				8641741525B4D11D00AD5625 /* TimerView.swift in Sources */,
 				8641738725B27D3A00AD5625 /* ScatagoriesApp.swift in Sources */,
 				8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */,
 				864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */,
@@ -332,6 +347,7 @@
 				864173A325B289DA00AD5625 /* ScategoriesTextField.swift in Sources */,
 				864173D425B34E5D00AD5625 /* DatabaseManager.swift in Sources */,
 				8641740425B382DF00AD5625 /* PointsView.swift in Sources */,
+				8641741925B4D15800AD5625 /* TimerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

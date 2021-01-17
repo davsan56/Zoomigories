@@ -13,6 +13,7 @@ class NetworkManager: ObservableObject {
     @Published var listToLoad: Int = 1
     @Published var totalPointsThisRound: Int = 0
     @Published var totalPoints: Int = 0
+    @Published var stopEditing = false
     
     let databaseManager = DatabaseManager()
     

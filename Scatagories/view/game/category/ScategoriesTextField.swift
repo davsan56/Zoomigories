@@ -28,6 +28,7 @@ struct ScategoriesTextField: View {
                                     .offset(x: 0, y: 15)
                                 }
                         )
+                        .disabled(networkManager.stopEditing)
                 }
                 .padding()
                 PointStepper(networkManager: networkManager)
