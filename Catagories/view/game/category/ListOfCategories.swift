@@ -14,7 +14,7 @@ struct ListOfCategories: View {
     var body: some View {
         VStack {
             ForEach(categories) { category in
-                ScategoriesTextField(networkManager: networkManager, category: category)
+                CategoriesTextField(networkManager: networkManager, category: category)
             }
         }
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScategoriesGame: View {
+struct CategoriesGame: View {
     @ObservedObject var networkManager: NetworkManager
     @StateObject var timerManager: TimerManager = TimerManager()
     
@@ -50,6 +50,6 @@ struct ScategoriesGame: View {
 
 struct ScategoriesGame_Previews: PreviewProvider {
     static var previews: some View {
-        ScategoriesGame(networkManager: NetworkManager())
+        CategoriesGame(networkManager: NetworkManager())
     }
 }

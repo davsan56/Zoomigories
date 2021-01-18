@@ -16,7 +16,7 @@ struct HomeScreen: View {
             VStack {
                 Text("Scategories!")
                     .font(.title)
-                NavigationLink(destination: ScategoriesGame(networkManager: networkManager)) {
+                NavigationLink(destination: CategoriesGame(networkManager: networkManager)) {
                     Text("Start game")
                         .foregroundColor(.white)
                         .padding()

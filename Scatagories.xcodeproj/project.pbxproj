@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		423279842EB4E8D624F427D7 /* Pods_Scatagories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */; };
-		8641738725B27D3A00AD5625 /* ScatagoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641738625B27D3A00AD5625 /* ScatagoriesApp.swift */; };
-		8641738925B27D3A00AD5625 /* ScategoriesGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641738825B27D3A00AD5625 /* ScategoriesGame.swift */; };
+		8641738725B27D3A00AD5625 /* CatagoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641738625B27D3A00AD5625 /* CatagoriesApp.swift */; };
+		8641738925B27D3A00AD5625 /* CategoriesGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641738825B27D3A00AD5625 /* CategoriesGame.swift */; };
 		8641738B25B27D3D00AD5625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8641738A25B27D3D00AD5625 /* Assets.xcassets */; };
 		8641738E25B27D3D00AD5625 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8641738D25B27D3D00AD5625 /* Preview Assets.xcassets */; };
 		8641739825B2879A00AD5625 /* list1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8641739725B2879A00AD5625 /* list1.json */; };
 		8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641739B25B2887B00AD5625 /* CategoryList.swift */; };
-		864173A325B289DA00AD5625 /* ScategoriesTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173A225B289DA00AD5625 /* ScategoriesTextField.swift */; };
+		864173A325B289DA00AD5625 /* CategoriesTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173A225B289DA00AD5625 /* CategoriesTextField.swift */; };
 		864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173A725B28F7000AD5625 /* NetworkManager.swift */; };
 		864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173AB25B343ED00AD5625 /* ErrorView.swift */; };
 		864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173AE25B3447F00AD5625 /* LoadingView.swift */; };
@@ -36,14 +36,14 @@
 		48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scatagories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84468D09743EA73E1BB93A2E /* Pods-Scatagories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scatagories.release.xcconfig"; path = "Target Support Files/Pods-Scatagories/Pods-Scatagories.release.xcconfig"; sourceTree = "<group>"; };
 		8641738325B27D3A00AD5625 /* Scatagories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scatagories.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8641738625B27D3A00AD5625 /* ScatagoriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatagoriesApp.swift; sourceTree = "<group>"; };
-		8641738825B27D3A00AD5625 /* ScategoriesGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScategoriesGame.swift; sourceTree = "<group>"; };
+		8641738625B27D3A00AD5625 /* CatagoriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoriesApp.swift; sourceTree = "<group>"; };
+		8641738825B27D3A00AD5625 /* CategoriesGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesGame.swift; sourceTree = "<group>"; };
 		8641738A25B27D3D00AD5625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8641738D25B27D3D00AD5625 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8641738F25B27D3D00AD5625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8641739725B2879A00AD5625 /* list1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = list1.json; sourceTree = "<group>"; };
 		8641739B25B2887B00AD5625 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
-		864173A225B289DA00AD5625 /* ScategoriesTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScategoriesTextField.swift; sourceTree = "<group>"; };
+		864173A225B289DA00AD5625 /* CategoriesTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTextField.swift; sourceTree = "<group>"; };
 		864173A725B28F7000AD5625 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		864173AB25B343ED00AD5625 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		864173AE25B3447F00AD5625 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		8641737A25B27D3A00AD5625 = {
 			isa = PBXGroup;
 			children = (
-				8641738525B27D3A00AD5625 /* Scatagories */,
+				8641738525B27D3A00AD5625 /* Catagories */,
 				8641738425B27D3A00AD5625 /* Products */,
 				52274691C9227F8A31398DD6 /* Pods */,
 				6E475DFF70052F7C2A4DD57F /* Frameworks */,
@@ -107,21 +107,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8641738525B27D3A00AD5625 /* Scatagories */ = {
+		8641738525B27D3A00AD5625 /* Catagories */ = {
 			isa = PBXGroup;
 			children = (
 				864173A625B28F4200AD5625 /* network */,
 				8641739F25B2889400AD5625 /* view */,
 				8641739E25B2887F00AD5625 /* model */,
 				8641739625B2874E00AD5625 /* lists */,
-				8641738625B27D3A00AD5625 /* ScatagoriesApp.swift */,
+				8641738625B27D3A00AD5625 /* CatagoriesApp.swift */,
 				8641738A25B27D3D00AD5625 /* Assets.xcassets */,
 				8641738F25B27D3D00AD5625 /* Info.plist */,
 				8641738C25B27D3D00AD5625 /* Preview Content */,
 				864173C225B34BBC00AD5625 /* AppDelegate.swift */,
 				864173B125B34AF400AD5625 /* GoogleService-Info.plist */,
 			);
-			path = Scatagories;
+			path = Catagories;
 			sourceTree = "<group>";
 		};
 		8641738C25B27D3D00AD5625 /* Preview Content */ = {
@@ -182,7 +182,7 @@
 				8641741725B4D12000AD5625 /* timer */,
 				8641741225B4A75C00AD5625 /* category */,
 				8641741125B4A6FC00AD5625 /* points */,
-				8641738825B27D3A00AD5625 /* ScategoriesGame.swift */,
+				8641738825B27D3A00AD5625 /* CategoriesGame.swift */,
 				864173AB25B343ED00AD5625 /* ErrorView.swift */,
 				864173AE25B3447F00AD5625 /* LoadingView.swift */,
 			);
@@ -201,7 +201,7 @@
 		8641741225B4A75C00AD5625 /* category */ = {
 			isa = PBXGroup;
 			children = (
-				864173A225B289DA00AD5625 /* ScategoriesTextField.swift */,
+				864173A225B289DA00AD5625 /* CategoriesTextField.swift */,
 				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
 			);
 			path = category;
@@ -332,19 +332,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				864173C325B34BBC00AD5625 /* AppDelegate.swift in Sources */,
-				8641738925B27D3A00AD5625 /* ScategoriesGame.swift in Sources */,
+				8641738925B27D3A00AD5625 /* CategoriesGame.swift in Sources */,
 				864173FE25B37B9E00AD5625 /* ListOfCategories.swift in Sources */,
 				864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */,
 				8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */,
 				8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */,
 				8641741525B4D11D00AD5625 /* TimerView.swift in Sources */,
-				8641738725B27D3A00AD5625 /* ScatagoriesApp.swift in Sources */,
+				8641738725B27D3A00AD5625 /* CatagoriesApp.swift in Sources */,
 				8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */,
 				864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */,
 				8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */,
 				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,
 				8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */,
-				864173A325B289DA00AD5625 /* ScategoriesTextField.swift in Sources */,
+				864173A325B289DA00AD5625 /* CategoriesTextField.swift in Sources */,
 				864173D425B34E5D00AD5625 /* DatabaseManager.swift in Sources */,
 				8641740425B382DF00AD5625 /* PointsView.swift in Sources */,
 				8641741925B4D15800AD5625 /* TimerManager.swift in Sources */,
@@ -477,16 +477,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Scatagories/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Catagories/Preview Content\"";
 				DEVELOPMENT_TEAM = YK2CP5USLV;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Scatagories/Info.plist;
+				INFOPLIST_FILE = Catagories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Scatagories;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Catagories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,16 +501,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Scatagories/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Catagories/Preview Content\"";
 				DEVELOPMENT_TEAM = YK2CP5USLV;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Scatagories/Info.plist;
+				INFOPLIST_FILE = Catagories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Scatagories;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Catagories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

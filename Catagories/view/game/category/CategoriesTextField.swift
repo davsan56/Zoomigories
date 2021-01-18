@@ -1,5 +1,5 @@
 //
-//  ScategoriesTextField.swift
+//  CategoriesTextField.swift
 //  Scatagories
 //
 //  Created by David San Antonio on 1/15/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScategoriesTextField: View {
+struct CategoriesTextField: View {
     @ObservedObject var networkManager: NetworkManager
     
     let category: Category
@@ -40,6 +40,6 @@ struct ScategoriesTextField: View {
 
 struct ScategoriesTextField_Previews: PreviewProvider {
     static var previews: some View {
-        ScategoriesTextField(networkManager: NetworkManager(), category: Category(number: "1", categoryDescription: "Monster/Villian"))
+        CategoriesTextField(networkManager: NetworkManager(), category: Category(number: "1", categoryDescription: "Monster/Villian"))
     }
 }
