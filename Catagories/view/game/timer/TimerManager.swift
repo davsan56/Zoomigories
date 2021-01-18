@@ -9,7 +9,7 @@ import Foundation
 
 class TimerManager: ObservableObject {
     var timer: Timer? = nil
-    @Published var timeRemaining = 5
+    @Published var timeRemaining = 180
     @Published var timerDone = false
     
     func startTimer() {

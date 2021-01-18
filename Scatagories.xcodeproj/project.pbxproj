@@ -35,7 +35,7 @@
 		0A0B84C8E07E631689253B97 /* Pods-Scatagories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scatagories.debug.xcconfig"; path = "Target Support Files/Pods-Scatagories/Pods-Scatagories.debug.xcconfig"; sourceTree = "<group>"; };
 		48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scatagories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84468D09743EA73E1BB93A2E /* Pods-Scatagories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scatagories.release.xcconfig"; path = "Target Support Files/Pods-Scatagories/Pods-Scatagories.release.xcconfig"; sourceTree = "<group>"; };
-		8641738325B27D3A00AD5625 /* Scatagories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scatagories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8641738325B27D3A00AD5625 /* Zoomigories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomigories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8641738625B27D3A00AD5625 /* CatagoriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoriesApp.swift; sourceTree = "<group>"; };
 		8641738825B27D3A00AD5625 /* CategoriesGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesGame.swift; sourceTree = "<group>"; };
 		8641738A25B27D3D00AD5625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		8641738425B27D3A00AD5625 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8641738325B27D3A00AD5625 /* Scatagories.app */,
+				8641738325B27D3A00AD5625 /* Zoomigories.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			);
 			name = Scatagories;
 			productName = Scatagories;
-			productReference = 8641738325B27D3A00AD5625 /* Scatagories.app */;
+			productReference = 8641738325B27D3A00AD5625 /* Zoomigories.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -487,8 +487,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Categories;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
+				PRODUCT_NAME = Zoomigories;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -511,8 +511,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Categories;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
+				PRODUCT_NAME = Zoomigories;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
