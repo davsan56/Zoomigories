@@ -14,7 +14,7 @@ struct HomeScreen: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Scategories!")
+                Text("Zoomigories!")
                     .font(.title)
                 NavigationLink(destination: CategoriesGame(networkManager: networkManager)) {
                     Text("Start game")
@@ -29,6 +29,7 @@ struct HomeScreen: View {
 //                    .padding([.leading, .trailing])
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

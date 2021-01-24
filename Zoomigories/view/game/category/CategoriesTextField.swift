@@ -17,29 +17,28 @@ struct CategoriesTextField: View {
     
     @ViewBuilder
     var body: some View {
-        VStack {
-            VStack {
-                HStack {
-                    Text("\(category.number ?? "").")
-                    TextField(category.categoryDescription ?? "", text: $text)
-                        .overlay(
-                            VStack {
-                                Divider()
-                                    .offset(x: 0, y: 15)
-                                }
-                        )
-                        .disabled(networkManager.stopEditing)
-                }
-                .padding()
-                PointStepper(networkManager: networkManager)
+        HStack {
+            VStack(alignment: .leading) {
+                Text("\(category.number ?? ""). \(category.categoryDescription ?? "")")
+                TextField(category.categoryDescription ?? "", text: $text)
+                    .overlay(
+                        VStack {
+                            Divider()
+                                .offset(x: 0, y: 15)
+                            }
+                    )
+                    .disabled(networkManager.stopEditing)
             }
-            Divider()
+            PointStepper(networkManager: networkManager)
         }
+        .padding()
+        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+        .padding()
     }
 }
 
 struct ScategoriesTextField_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesTextField(networkManager: NetworkManager(), category: Category(number: "1", categoryDescription: "Monster/Villian"))
+        CategoriesTextField(networkManager: NetworkManager(), category: Category(number: "1", categoryDescription: "short"))
     }
 }

@@ -13,9 +13,9 @@ struct PointStepper: View {
     
     var body: some View {
         VStack {
-            Stepper(onIncrement: incrementStep, onDecrement: decrementStep) {
-                Text("Points: \(stepperValue)")
-            }
+            Text("\(stepperValue)")
+            Stepper("", onIncrement: incrementStep, onDecrement: decrementStep)
+                .labelsHidden()
         }
         .padding([.leading, .trailing])
     }

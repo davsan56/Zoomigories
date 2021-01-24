@@ -39,7 +39,7 @@ struct CategoriesGame: View {
             .onAppear(perform: {
                 networkManager.stopEditing = false
             })
-            .navigationTitle(Text("Scategories List \(networkManager.listToLoad)"))
+            .navigationTitle(Text("Zoomigories List \(networkManager.listToLoad)"))
         }
     }
     
