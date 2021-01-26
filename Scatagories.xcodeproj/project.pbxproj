@@ -29,6 +29,7 @@
 		8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */; };
 		8641741525B4D11D00AD5625 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641741425B4D11D00AD5625 /* TimerView.swift */; };
 		8641741925B4D15800AD5625 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641741825B4D15800AD5625 /* TimerManager.swift */; };
+		867E0E0A25BE1F1A00459CF1 /* ZoomigorieMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E0925BE1F1A00459CF1 /* ZoomigorieMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPointsView.swift; sourceTree = "<group>"; };
 		8641741425B4D11D00AD5625 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8641741825B4D15800AD5625 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		867E0E0925BE1F1A00459CF1 /* ZoomigorieMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomigorieMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			children = (
 				864173A225B289DA00AD5625 /* CategoriesTextField.swift */,
 				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
+				867E0E0925BE1F1A00459CF1 /* ZoomigorieMainView.swift */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				8641741525B4D11D00AD5625 /* TimerView.swift in Sources */,
 				8641738725B27D3A00AD5625 /* CatagoriesApp.swift in Sources */,
 				8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */,
+				867E0E0A25BE1F1A00459CF1 /* ZoomigorieMainView.swift in Sources */,
 				864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */,
 				8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */,
 				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,

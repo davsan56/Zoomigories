@@ -17,6 +17,10 @@ class NetworkManager: ObservableObject {
     
     let databaseManager = DatabaseManager()
     
+    init(categories: CategoryList? = nil) {
+        self.categoryList = categories
+    }
+    
     func getCategoryList() {
         self.categoryList = nil
         self.error = false

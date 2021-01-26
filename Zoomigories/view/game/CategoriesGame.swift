@@ -20,31 +20,8 @@ struct CategoriesGame: View {
                 LoadingView(networkManager: networkManager)
             }
         } else {
-            ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, content: {
-                VStack {
-                    HStack {
-                        TimerView(timerManager: timerManager)
-                            .alert(isPresented: $timerManager.timerDone, content: {
-                                Alert(title: Text("Times up!"),
-                                      message: Text("Time to tally the points"),
-                                      dismissButton: .default(Text("OK")) {
-                                        disableCategoryTextFields()
-                                      })
-                            })
-                        PointsView(networkManager: networkManager)
-                    }
-                    ListOfCategories(networkManager: networkManager, categories: networkManager.categoryList?.categories ?? [])
-                }
-            })
-            .onAppear(perform: {
-                networkManager.stopEditing = false
-            })
-            .navigationTitle(Text("Zoomigories List \(networkManager.listToLoad)"))
+            ZoomigorieMainView(timerManager: timerManager, networkManager: networkManager)
         }
-    }
-    
-    private func disableCategoryTextFields() {
-        networkManager.stopEditing = true
     }
 }
 
