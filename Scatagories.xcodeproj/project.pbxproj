@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		423279842EB4E8D624F427D7 /* Pods_Scatagories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */; };
+		8607AF1825C26F8D0081DB9D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607AF1625C26F8D0081DB9D /* TimerView.swift */; };
+		8607AF1925C26F8D0081DB9D /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607AF1725C26F8D0081DB9D /* TimerManager.swift */; };
 		8641738725B27D3A00AD5625 /* CatagoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641738625B27D3A00AD5625 /* CatagoriesApp.swift */; };
 		8641738925B27D3A00AD5625 /* CategoriesGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641738825B27D3A00AD5625 /* CategoriesGame.swift */; };
 		8641738B25B27D3D00AD5625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8641738A25B27D3D00AD5625 /* Assets.xcassets */; };
@@ -27,15 +29,26 @@
 		8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740625B3B4C600AD5625 /* PointStepper.swift */; };
 		8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */; };
 		8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */; };
-		8641741525B4D11D00AD5625 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641741425B4D11D00AD5625 /* TimerView.swift */; };
-		8641741925B4D15800AD5625 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641741825B4D15800AD5625 /* TimerManager.swift */; };
-		867E0E0A25BE1F1A00459CF1 /* ZoomigorieMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E0925BE1F1A00459CF1 /* ZoomigorieMainView.swift */; };
+		867E0E0A25BE1F1A00459CF1 /* ZoomigoriesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E0925BE1F1A00459CF1 /* ZoomigoriesMainView.swift */; };
+		867E0E1E25BFA34600459CF1 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 867E0E1D25BFA34600459CF1 /* SocketIO */; };
+		867E0E2225BFBFDF00459CF1 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E2125BFBFDF00459CF1 /* EnterNameView.swift */; };
+		867E0E2625BFC18600459CF1 /* RoundOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E2525BFC18600459CF1 /* RoundOverView.swift */; };
+		867E0E2925BFC1FB00459CF1 /* SocketHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E2825BFC1FB00459CF1 /* SocketHelper.swift */; };
+		867E0E2D25C05D1400459CF1 /* OnlineGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E2C25C05D1400459CF1 /* OnlineGameManager.swift */; };
+		867E0E3225C064B400459CF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E3125C064B400459CF1 /* User.swift */; };
+		86B345C625C0C37F00302A96 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345C525C0C37F00302A96 /* ScoreboardView.swift */; };
+		86B345C925C0C3DF00302A96 /* PublicButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */; };
+		86B345CC25C0F30100302A96 /* LeaderButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345CB25C0F30100302A96 /* LeaderButtons.swift */; };
+		86B345CF25C0F33B00302A96 /* ReadyUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */; };
+		86B345F925C1C64400302A96 /* OnlineGameViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A0B84C8E07E631689253B97 /* Pods-Scatagories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scatagories.debug.xcconfig"; path = "Target Support Files/Pods-Scatagories/Pods-Scatagories.debug.xcconfig"; sourceTree = "<group>"; };
 		48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scatagories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84468D09743EA73E1BB93A2E /* Pods-Scatagories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scatagories.release.xcconfig"; path = "Target Support Files/Pods-Scatagories/Pods-Scatagories.release.xcconfig"; sourceTree = "<group>"; };
+		8607AF1625C26F8D0081DB9D /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		8607AF1725C26F8D0081DB9D /* TimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		8641738325B27D3A00AD5625 /* Zoomigories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomigories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8641738625B27D3A00AD5625 /* CatagoriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoriesApp.swift; sourceTree = "<group>"; };
 		8641738825B27D3A00AD5625 /* CategoriesGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesGame.swift; sourceTree = "<group>"; };
@@ -57,9 +70,17 @@
 		8641740625B3B4C600AD5625 /* PointStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStepper.swift; sourceTree = "<group>"; };
 		8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLetterPicker.swift; sourceTree = "<group>"; };
 		8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPointsView.swift; sourceTree = "<group>"; };
-		8641741425B4D11D00AD5625 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		8641741825B4D15800AD5625 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
-		867E0E0925BE1F1A00459CF1 /* ZoomigorieMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomigorieMainView.swift; sourceTree = "<group>"; };
+		867E0E0925BE1F1A00459CF1 /* ZoomigoriesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomigoriesMainView.swift; sourceTree = "<group>"; };
+		867E0E2125BFBFDF00459CF1 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
+		867E0E2525BFC18600459CF1 /* RoundOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOverView.swift; sourceTree = "<group>"; };
+		867E0E2825BFC1FB00459CF1 /* SocketHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketHelper.swift; sourceTree = "<group>"; };
+		867E0E2C25C05D1400459CF1 /* OnlineGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameManager.swift; sourceTree = "<group>"; };
+		867E0E3125C064B400459CF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		86B345C525C0C37F00302A96 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicButtonsView.swift; sourceTree = "<group>"; };
+		86B345CB25C0F30100302A96 /* LeaderButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderButtons.swift; sourceTree = "<group>"; };
+		86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyUpButton.swift; sourceTree = "<group>"; };
+		86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameViewHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				423279842EB4E8D624F427D7 /* Pods_Scatagories.framework in Frameworks */,
+				867E0E1E25BFA34600459CF1 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +111,15 @@
 				48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8607AF1525C26F810081DB9D /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				8607AF1725C26F8D0081DB9D /* TimerManager.swift */,
+				8607AF1625C26F8D0081DB9D /* TimerView.swift */,
+			);
+			path = timer;
 			sourceTree = "<group>";
 		};
 		8641737A25B27D3A00AD5625 = {
@@ -146,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				8641739B25B2887B00AD5625 /* CategoryList.swift */,
+				867E0E3125C064B400459CF1 /* User.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -153,6 +185,7 @@
 		8641739F25B2889400AD5625 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				867E0E2025BFBFBD00459CF1 /* online */,
 				8641741025B4A6D300AD5625 /* game */,
 				8641740F25B4A6BA00AD5625 /* homescreen */,
 			);
@@ -164,6 +197,8 @@
 			children = (
 				864173A725B28F7000AD5625 /* NetworkManager.swift */,
 				864173D325B34E5D00AD5625 /* DatabaseManager.swift */,
+				867E0E2825BFC1FB00459CF1 /* SocketHelper.swift */,
+				867E0E2C25C05D1400459CF1 /* OnlineGameManager.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -181,7 +216,7 @@
 		8641741025B4A6D300AD5625 /* game */ = {
 			isa = PBXGroup;
 			children = (
-				8641741725B4D12000AD5625 /* timer */,
+				8607AF1525C26F810081DB9D /* timer */,
 				8641741225B4A75C00AD5625 /* category */,
 				8641741125B4A6FC00AD5625 /* points */,
 				8641738825B27D3A00AD5625 /* CategoriesGame.swift */,
@@ -205,18 +240,31 @@
 			children = (
 				864173A225B289DA00AD5625 /* CategoriesTextField.swift */,
 				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
-				867E0E0925BE1F1A00459CF1 /* ZoomigorieMainView.swift */,
+				867E0E0925BE1F1A00459CF1 /* ZoomigoriesMainView.swift */,
 			);
 			path = category;
 			sourceTree = "<group>";
 		};
-		8641741725B4D12000AD5625 /* timer */ = {
+		867E0E2025BFBFBD00459CF1 /* online */ = {
 			isa = PBXGroup;
 			children = (
-				8641741425B4D11D00AD5625 /* TimerView.swift */,
-				8641741825B4D15800AD5625 /* TimerManager.swift */,
+				86B345FB25C1C65400302A96 /* subviews */,
+				867E0E2525BFC18600459CF1 /* RoundOverView.swift */,
+				86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */,
+				867E0E2125BFBFDF00459CF1 /* EnterNameView.swift */,
 			);
-			path = timer;
+			path = online;
+			sourceTree = "<group>";
+		};
+		86B345FB25C1C65400302A96 /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				86B345C525C0C37F00302A96 /* ScoreboardView.swift */,
+				86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */,
+				86B345CB25C0F30100302A96 /* LeaderButtons.swift */,
+				86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */,
+			);
+			path = subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +285,9 @@
 			dependencies = (
 			);
 			name = Scatagories;
+			packageProductDependencies = (
+				867E0E1D25BFA34600459CF1 /* SocketIO */,
+			);
 			productName = Scatagories;
 			productReference = 8641738325B27D3A00AD5625 /* Zoomigories.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +315,9 @@
 				Base,
 			);
 			mainGroup = 8641737A25B27D3A00AD5625;
+			packageReferences = (
+				867E0E1C25BFA34600459CF1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = 8641738425B27D3A00AD5625 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,22 +390,32 @@
 			files = (
 				864173C325B34BBC00AD5625 /* AppDelegate.swift in Sources */,
 				8641738925B27D3A00AD5625 /* CategoriesGame.swift in Sources */,
+				86B345C925C0C3DF00302A96 /* PublicButtonsView.swift in Sources */,
 				864173FE25B37B9E00AD5625 /* ListOfCategories.swift in Sources */,
 				864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */,
+				8607AF1925C26F8D0081DB9D /* TimerManager.swift in Sources */,
+				86B345F925C1C64400302A96 /* OnlineGameViewHolder.swift in Sources */,
 				8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */,
+				867E0E2225BFBFDF00459CF1 /* EnterNameView.swift in Sources */,
 				8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */,
-				8641741525B4D11D00AD5625 /* TimerView.swift in Sources */,
+				8607AF1825C26F8D0081DB9D /* TimerView.swift in Sources */,
 				8641738725B27D3A00AD5625 /* CatagoriesApp.swift in Sources */,
+				86B345CF25C0F33B00302A96 /* ReadyUpButton.swift in Sources */,
 				8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */,
-				867E0E0A25BE1F1A00459CF1 /* ZoomigorieMainView.swift in Sources */,
+				867E0E0A25BE1F1A00459CF1 /* ZoomigoriesMainView.swift in Sources */,
+				86B345CC25C0F30100302A96 /* LeaderButtons.swift in Sources */,
 				864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */,
 				8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */,
+				867E0E2625BFC18600459CF1 /* RoundOverView.swift in Sources */,
 				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,
 				8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */,
+				867E0E2925BFC1FB00459CF1 /* SocketHelper.swift in Sources */,
 				864173A325B289DA00AD5625 /* CategoriesTextField.swift in Sources */,
+				867E0E2D25C05D1400459CF1 /* OnlineGameManager.swift in Sources */,
 				864173D425B34E5D00AD5625 /* DatabaseManager.swift in Sources */,
 				8641740425B382DF00AD5625 /* PointsView.swift in Sources */,
-				8641741925B4D15800AD5625 /* TimerManager.swift in Sources */,
+				86B345C625C0C37F00302A96 /* ScoreboardView.swift in Sources */,
+				867E0E3225C064B400459CF1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		867E0E1C25BFA34600459CF1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		867E0E1D25BFA34600459CF1 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 867E0E1C25BFA34600459CF1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8641737B25B27D3A00AD5625 /* Project object */;
 }

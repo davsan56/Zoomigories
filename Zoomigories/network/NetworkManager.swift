@@ -21,10 +21,11 @@ class NetworkManager: ObservableObject {
         self.categoryList = categories
     }
     
-    func getCategoryList() {
+    func getCategoryList(listNumber: Int) {
         self.categoryList = nil
         self.error = false
-        databaseManager.getCategoryList(listNumber: listToLoad, completion: { categoryList in
+        self.listToLoad = listNumber
+        databaseManager.getCategoryList(listNumber: listNumber, completion: { categoryList in
             self.categoryList = categoryList
             self.error = false
         }, errorHandler: {

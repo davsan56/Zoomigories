@@ -8,25 +8,29 @@
 import SwiftUI
 
 struct CategoriesGame: View {
-    @ObservedObject var networkManager: NetworkManager
-    @StateObject var timerManager: TimerManager = TimerManager()
+    // Passed in from online game
+    let listNumber: Int
+    
+    @StateObject var onlineGameManager: OnlineGameManager
+    @StateObject var networkManager: NetworkManager = NetworkManager()
     
     @ViewBuilder
     var body: some View {
-        if networkManager.categoryList == nil {
-            if networkManager.error {
-                ErrorView(networkManager: networkManager)
+        VStack {
+            if networkManager.categoryList == nil {
+                ProgressView().progressViewStyle(CircularProgressViewStyle())
             } else {
-                LoadingView(networkManager: networkManager)
+                ZoomigoriesMainView(onlineGameManager: onlineGameManager, networkManager: networkManager)
             }
-        } else {
-            ZoomigorieMainView(timerManager: timerManager, networkManager: networkManager)
         }
+        .onAppear(perform: {
+            self.networkManager.getCategoryList(listNumber: listNumber)
+        })
     }
 }
 
 struct ScategoriesGame_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesGame(networkManager: NetworkManager())
+        CategoriesGame(listNumber: 1, onlineGameManager: OnlineGameManager())
     }
 }

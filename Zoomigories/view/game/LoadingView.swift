@@ -37,7 +37,7 @@ struct LoadingView: View {
     
     private func loadCategoryList() {
         self.networkManager.listToLoad = Int(self.listNumber) ?? 1
-        networkManager.getCategoryList()
+//        networkManager.getCategoryList()
     }
 }
 

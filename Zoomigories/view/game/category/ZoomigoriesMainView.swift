@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct ZoomigorieMainView: View {
-    @StateObject var timerManager: TimerManager
-    @ObservedObject var networkManager: NetworkManager
+struct ZoomigoriesMainView: View {
+    @StateObject var timerManager: TimerManager = TimerManager()
+    @StateObject var onlineGameManager: OnlineGameManager
+    @StateObject var networkManager: NetworkManager
     
     var body: some View {
         ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, content: {
@@ -23,7 +24,7 @@ struct ZoomigorieMainView: View {
                                     disableCategoryTextFields()
                                   })
                         })
-                    PointsView(networkManager: networkManager)
+                    PointsView(networkManager: networkManager, onlineGameManager: onlineGameManager)
                 }
                 ListOfCategories(networkManager: networkManager, categories: networkManager.categoryList?.categories ?? [])
             }
@@ -47,6 +48,6 @@ struct ZoomigorieMainView_Previews: PreviewProvider {
     ])
     
     static var previews: some View {
-        ZoomigorieMainView(timerManager: TimerManager(), networkManager: NetworkManager(categories: categories))
+        ZoomigoriesMainView(onlineGameManager: OnlineGameManager(), networkManager: NetworkManager(categories: categories))
     }
 }

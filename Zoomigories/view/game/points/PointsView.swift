@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PointsView: View {
-    @ObservedObject var networkManager: NetworkManager
-    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @StateObject var networkManager: NetworkManager
+    @StateObject var onlineGameManager: OnlineGameManager
     
     @State private var showingAlert = false
     
@@ -34,6 +34,7 @@ struct PointsView: View {
             .padding()
             .background(Color.blue)
             .cornerRadius(5)
+            // TODO: Disabled button if timer not done
         }
         .padding()
     }
@@ -43,12 +44,13 @@ struct PointsView: View {
         networkManager.totalPointsThisRound = 0
         networkManager.categoryList = nil
         
-        self.mode.wrappedValue.dismiss()
+        onlineGameManager.submitScore(score: networkManager.totalPoints)
+        onlineGameManager.gameState = .RoundOver
     }
 }
 
 struct PointsView_Previews: PreviewProvider {
     static var previews: some View {
-        PointsView(networkManager: NetworkManager())
+        PointsView(networkManager: NetworkManager(), onlineGameManager: OnlineGameManager())
     }
 }

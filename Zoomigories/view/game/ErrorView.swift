@@ -12,15 +12,11 @@ struct ErrorView: View {
     
     var body: some View {
         VStack {
-            Text("Error loading Scategories list \(self.networkManager.listToLoad)")
+            Text("Error loading Zoomigories list \(self.networkManager.listToLoad)")
             Divider()
             LoadingView(networkManager: networkManager)
         }
         .padding()
-    }
-    
-    private func loadCategoryList() {
-        networkManager.getCategoryList()
     }
 }
 

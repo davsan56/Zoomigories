@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var networkManager = NetworkManager()
+    @StateObject var onlineGameManager = OnlineGameManager()
     
     @ViewBuilder
     var body: some View {
@@ -16,17 +17,21 @@ struct HomeScreen: View {
             VStack {
                 Text("Zoomigories!")
                     .font(.title)
-                NavigationLink(destination: CategoriesGame(networkManager: networkManager)) {
-                    Text("Start game")
+                    .padding(.bottom)
+                NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: false)) {
+                    Text("Start a new game")
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.blue)
                         .cornerRadius(5)
                 }
-                TotalPointsView(networkManager: networkManager)
-                    .padding([.top, .bottom])
-                RandomLetterPicker()
-//                    .padding([.leading, .trailing])
+                NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: true)) {
+                    Text("Join a game")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(5)
+                }
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
