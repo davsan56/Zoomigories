@@ -8,6 +8,5 @@ target 'Scatagories' do
   # Pods for Scatagories
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
-  pod 'Firebase/Auth'
   
 end

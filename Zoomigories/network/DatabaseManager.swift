@@ -7,7 +7,6 @@
 
 import Foundation
 import FirebaseDatabase
-import FirebaseAuth
 
 class DatabaseManager {
     var ref: DatabaseReference!
