@@ -13,7 +13,7 @@ class SocketHelper {
     
     weak var delegate: OnlineGameManager?
     
-    let manager: SocketManager = SocketManager(socketURL: URL(string: "http://localhost:3000")!, config: [.log(true), .compress])
+    let manager: SocketManager = SocketManager(socketURL: URL(string: Helper.backendUrl)!, config: [.log(true), .compress])
     let socket: SocketIOClient!
     
     var gameCode: String = "" {
@@ -85,6 +85,10 @@ class SocketHelper {
         
         socket.on("userDisconnected") { data, ack in
             self.setGameData(data: data)
+        }
+        
+        socket.on(clientEvent: .error) { data, ack in
+            self.errorMessage = "Could not connect"
         }
         
         socket.on("gameStarted") { data, ack in

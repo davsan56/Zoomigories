@@ -9,7 +9,7 @@ import Foundation
 
 class TimerManager: ObservableObject {
     var timer: Timer? = nil
-    @Published var timeRemaining = 10
+    @Published var timeRemaining = Env.isProduction() ? 180 : 10
     @Published var timerDone = false
     
     func startTimer() {
