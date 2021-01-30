@@ -12,4 +12,5 @@ struct User: Identifiable {
     let name: String
     let score: Int
     let ready: Bool
+    let isLeader: Bool
 }

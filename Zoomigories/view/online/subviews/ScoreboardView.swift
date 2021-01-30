@@ -22,7 +22,8 @@ struct ScoreboardView: View {
                 HStack {
                     Text(user.name)
                     Text("\(user.score)")
-                    Image(systemName: user.ready ? "checkmark.circle.fill" : "xmark.circle.fill")
+                    Image(systemName: user.isLeader ? "star.circle.fill" : user.ready ? "checkmark.circle.fill" : "xmark.circle.fill")
+                        .foregroundColor(user.isLeader ? .yellow : user.ready ? .green : .red)
                 }
                 Divider()
             }
@@ -32,6 +33,6 @@ struct ScoreboardView: View {
 
 struct ScoreboardView_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreboardView(onlineGameManager: OnlineGameManager(code: "ABCD", users: [User(name: "David", score: 0, ready: false), User(name: "Bri", score: 1, ready: true)], isLeader: false))
+        ScoreboardView(onlineGameManager: OnlineGameManager(code: "ABCD", users: [User(name: "David", score: 0, ready: false, isLeader: true), User(name: "Bri", score: 1, ready: true, isLeader: false)], isLeader: false))
     }
 }

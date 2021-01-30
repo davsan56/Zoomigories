@@ -15,14 +15,10 @@ struct PointsView: View {
     
     var body: some View {
         HStack {
-            Text("Total points: \(networkManager.totalPointsThisRound)")
+            Text("Points: \(networkManager.totalPointsThisRound)")
             Spacer()
             Button(action: {
-                if !networkManager.stopEditing {
-                    self.showingAlert.toggle()
-                } else {
-                    handleSubmitPressed()
-                }
+                self.showingAlert.toggle()
             }) {
                 Text("Submit")
                     .foregroundColor(.white)

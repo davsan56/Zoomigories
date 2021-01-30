@@ -185,7 +185,7 @@ class SocketHelper {
             guard let score = user["score"] as? Int else { return }
             guard let ready = user["ready"] as? Bool else { return }
             guard let id = user["id"] as? String else { return }
-            let gameUser = User(id: UUID(uuidString: id) ?? UUID(), name: displayName, score: score, ready: ready)
+            let gameUser = User(id: UUID(uuidString: id) ?? UUID(), name: displayName, score: score, ready: ready, isLeader: id == leaderId)
             allUsers.append(gameUser)
         }
         self.gameUsers = allUsers

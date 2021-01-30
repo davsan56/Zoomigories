@@ -24,6 +24,7 @@ struct ZoomigoriesMainView: View {
                                     disableCategoryTextFields()
                                   })
                         })
+                    Text("Letter: \(onlineGameManager.randomLetter)")
                     PointsView(networkManager: networkManager, onlineGameManager: onlineGameManager)
                 }
                 ListOfCategories(networkManager: networkManager, categories: networkManager.categoryList?.categories ?? [])
