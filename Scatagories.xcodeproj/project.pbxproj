@@ -37,6 +37,7 @@
 		867E0E2D25C05D1400459CF1 /* OnlineGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E2C25C05D1400459CF1 /* OnlineGameManager.swift */; };
 		867E0E3225C064B400459CF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E3125C064B400459CF1 /* User.swift */; };
 		8694BD3425C33C7200ED9416 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694BD3325C33C7200ED9416 /* Helper.swift */; };
+		8694BD4725C5E47800ED9416 /* CodeTextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694BD4625C5E47800ED9416 /* CodeTextBindingManager.swift */; };
 		86B345C625C0C37F00302A96 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345C525C0C37F00302A96 /* ScoreboardView.swift */; };
 		86B345C925C0C3DF00302A96 /* PublicButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */; };
 		86B345CC25C0F30100302A96 /* LeaderButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345CB25C0F30100302A96 /* LeaderButtons.swift */; };
@@ -78,6 +79,7 @@
 		867E0E2C25C05D1400459CF1 /* OnlineGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameManager.swift; sourceTree = "<group>"; };
 		867E0E3125C064B400459CF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8694BD3325C33C7200ED9416 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		8694BD4625C5E47800ED9416 /* CodeTextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextBindingManager.swift; sourceTree = "<group>"; };
 		86B345C525C0C37F00302A96 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicButtonsView.swift; sourceTree = "<group>"; };
 		86B345CB25C0F30100302A96 /* LeaderButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderButtons.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				867E0E2525BFC18600459CF1 /* RoundOverView.swift */,
 				86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */,
 				867E0E2125BFBFDF00459CF1 /* EnterNameView.swift */,
+				8694BD4625C5E47800ED9416 /* CodeTextBindingManager.swift */,
 			);
 			path = online;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				864173C325B34BBC00AD5625 /* AppDelegate.swift in Sources */,
+				8694BD4725C5E47800ED9416 /* CodeTextBindingManager.swift in Sources */,
 				8641738925B27D3A00AD5625 /* CategoriesGame.swift in Sources */,
 				86B345C925C0C3DF00302A96 /* PublicButtonsView.swift in Sources */,
 				864173FE25B37B9E00AD5625 /* ListOfCategories.swift in Sources */,
@@ -558,7 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SWIFT_VERSION = 5.0;
@@ -582,7 +586,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SWIFT_VERSION = 5.0;
