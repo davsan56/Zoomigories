@@ -24,7 +24,7 @@ class OnlineGameManager: ObservableObject {
     @Published var randomLetter: String = ""
     @Published var leaderSocketId: String = ""
     @Published var areAllUsersReady: Bool = false
-    @Published var listNumber: Int = 0
+    @Published var listNumber: Int = 1
     @Published var gameState: GameState? = .EnterName
     
     init() {
@@ -34,7 +34,7 @@ class OnlineGameManager: ObservableObject {
     /// Init used soley for SwiftUI previews
     /// - Parameter code: Code to display on RoundOverView
     init(code: String = "", users: [User] = [], errorMessage: String? = "", isLeader: Bool = false, randomLetter: String = "") {
-        self.gameCode = code ?? ""
+        self.gameCode = code
         self.users = users
         self.errorMessage = errorMessage ?? ""
         self.isLeader = isLeader

@@ -24,7 +24,7 @@ struct PointStepper: View {
                     }
                 }
         }
-        .padding([.leading, .trailing])
+        .padding([.leading])
     }
 }
 
