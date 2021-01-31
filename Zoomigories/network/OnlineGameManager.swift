@@ -33,11 +33,12 @@ class OnlineGameManager: ObservableObject {
     
     /// Init used soley for SwiftUI previews
     /// - Parameter code: Code to display on RoundOverView
-    init(code: String, users: [User], errorMessage: String? = "", isLeader: Bool) {
-        self.gameCode = code
+    init(code: String = "", users: [User] = [], errorMessage: String? = "", isLeader: Bool = false, randomLetter: String = "") {
+        self.gameCode = code ?? ""
         self.users = users
         self.errorMessage = errorMessage ?? ""
         self.isLeader = isLeader
+        self.randomLetter = randomLetter
     }
     
     // MARK: Functions called from front end

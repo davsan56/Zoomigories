@@ -49,6 +49,6 @@ struct ZoomigorieMainView_Previews: PreviewProvider {
     ])
     
     static var previews: some View {
-        ZoomigoriesMainView(onlineGameManager: OnlineGameManager(), networkManager: NetworkManager(categories: categories))
+        ZoomigoriesMainView(onlineGameManager: OnlineGameManager(randomLetter: "H"), networkManager: NetworkManager(categories: categories))
     }
 }

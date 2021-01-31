@@ -14,20 +14,17 @@ struct PointStepper: View {
     var body: some View {
         VStack {
             Text("\(stepperValue)")
-            Stepper("", onIncrement: incrementStep, onDecrement: decrementStep)
+            Stepper("", value: $stepperValue, in: 0...4)
                 .labelsHidden()
+                .onChange(of: stepperValue) { [stepperValue] newValue in
+                    if newValue > stepperValue {
+                        networkManager.totalPointsThisRound += 1
+                    } else {
+                        networkManager.totalPointsThisRound -= 1
+                    }
+                }
         }
         .padding([.leading, .trailing])
-    }
-    
-    private func incrementStep() {
-        stepperValue += 1
-        networkManager.totalPointsThisRound += 1
-    }
-    
-    private func decrementStep() {
-        stepperValue -= 1
-        networkManager.totalPointsThisRound -= 1
     }
 }
 
