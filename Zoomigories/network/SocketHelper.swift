@@ -188,6 +188,9 @@ class SocketHelper {
             let gameUser = User(id: UUID(uuidString: id) ?? UUID(), name: displayName, score: score, ready: ready, isLeader: id == leaderId)
             allUsers.append(gameUser)
         }
+        allUsers.sort {
+            $0.score > $1.score
+        }
         self.gameUsers = allUsers
     }
 }
