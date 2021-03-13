@@ -10,18 +10,17 @@ import SwiftUI
 struct LeaderButtons: View {
     @StateObject var onlineGameManager: OnlineGameManager
     
-//    @State var stepperValue = 1
-    
     var body: some View {
         HStack {
             Button(action: {
                 onlineGameManager.startGame(listNumber: onlineGameManager.listNumber)
             }) {
                 Text("Start game")
-                    .foregroundColor(.white)
+                    .foregroundColor(onlineGameManager.areAllUsersReady ? .white : .blue)
                     .padding()
-                    .background(Color.blue)
+                    .background(onlineGameManager.areAllUsersReady ? Color.blue : Color.white)
                     .cornerRadius(5)
+                    .border(onlineGameManager.areAllUsersReady ? Color.white : Color.blue)
             }
             .disabled(!onlineGameManager.areAllUsersReady)
             Stepper(value: $onlineGameManager.listNumber, in: 1...16) {
