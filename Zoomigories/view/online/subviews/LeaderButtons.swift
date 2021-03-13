@@ -18,9 +18,12 @@ struct LeaderButtons: View {
                 Text("Start game")
                     .foregroundColor(onlineGameManager.areAllUsersReady ? .white : .blue)
                     .padding()
-                    .background(onlineGameManager.areAllUsersReady ? Color.blue : Color.white)
+                    .background(onlineGameManager.areAllUsersReady ? Color.blue : Color.clear)
                     .cornerRadius(5)
-                    .border(onlineGameManager.areAllUsersReady ? Color.white : Color.blue)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(onlineGameManager.areAllUsersReady ? Color.white : Color.blue, lineWidth: 1)
+                    )
             }
             .disabled(!onlineGameManager.areAllUsersReady)
             Stepper(value: $onlineGameManager.listNumber, in: 1...16) {
@@ -33,5 +36,6 @@ struct LeaderButtons: View {
 struct LeaderButtons_Previews: PreviewProvider {
     static var previews: some View {
         LeaderButtons(onlineGameManager: OnlineGameManager())
+            .preferredColorScheme(.light)
     }
 }
