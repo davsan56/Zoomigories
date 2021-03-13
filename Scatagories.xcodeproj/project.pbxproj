@@ -85,6 +85,7 @@
 		86B345CB25C0F30100302A96 /* LeaderButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderButtons.swift; sourceTree = "<group>"; };
 		86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyUpButton.swift; sourceTree = "<group>"; };
 		86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameViewHolder.swift; sourceTree = "<group>"; };
+		86DAE66025FD2401009629E6 /* Zoomigories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zoomigories.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 		8641737A25B27D3A00AD5625 = {
 			isa = PBXGroup;
 			children = (
+				86DAE66025FD2401009629E6 /* Zoomigories.entitlements */,
 				8641738525B27D3A00AD5625 /* Zoomigories */,
 				8641738425B27D3A00AD5625 /* Products */,
 				52274691C9227F8A31398DD6 /* Pods */,
@@ -552,6 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zoomigories.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Zoomigories/Preview Content\"";
 				DEVELOPMENT_TEAM = YK2CP5USLV;
@@ -562,9 +565,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.3;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -576,6 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zoomigories.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Zoomigories/Preview Content\"";
 				DEVELOPMENT_TEAM = YK2CP5USLV;
@@ -586,9 +591,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.3;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

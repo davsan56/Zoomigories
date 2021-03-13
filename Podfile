@@ -6,7 +6,8 @@ target 'Scatagories' do
   use_frameworks!
 
   # Pods for Scatagories
-  pod 'Firebase/Analytics'
+#  Commenting out because cant be used with mac catalyst yet
+#  pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   
 end
