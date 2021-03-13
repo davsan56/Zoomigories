@@ -32,7 +32,7 @@ struct CategoriesTextField: View {
             PointStepper(networkManager: networkManager)
         }
         .padding()
-        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+        .border(Color.primary)
         .padding()
     }
 }

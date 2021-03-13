@@ -14,13 +14,15 @@ struct RoundOverView: View {
     var body: some View {
         VStack {
             Spacer()
-            HStack {
+            VStack {
                 Text(onlineGameManager.gameCode)
                     .font(.title)
                 if !onlineGameManager.randomLetter.isEmpty {
                     Text("Letter: \(onlineGameManager.randomLetter)")
+                        .font(.headline)
                 }
             }
+            .padding([.bottom])
             ScoreboardView(onlineGameManager: onlineGameManager)
             Spacer()
             VStack {
@@ -32,6 +34,7 @@ struct RoundOverView: View {
                 }
             }
         }
+        .navigationTitle("Zoomigories")
         .padding()
     }
 }
