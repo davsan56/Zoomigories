@@ -80,19 +80,19 @@ class OnlineGameManager: ObservableObject {
     
     func codeDidChange(newCode: String) {
         self.gameCode = newCode
-        showNextScreen = true
-        gameState = .RoundOver
+        self.showNextScreen = true
+        self.gameState = .RoundOver
     }
     
     func usersDidChange(newUsers: [User]) {
         self.users = newUsers
-        showNextScreen = true
-        setAreAllUsersReady()
+        self.showNextScreen = true
+        self.areAllUsersReady = setAreAllUsersReady()
     }
     
     func errorMessageDidChange(message: String) {
         self.errorMessage = message
-        showNextScreen = false
+        self.showNextScreen = false
         if message.isEmpty {
             gameState = .RoundOver
         }
@@ -104,7 +104,7 @@ class OnlineGameManager: ObservableObject {
     
     func randomLetterChanged(value: String) {
         self.randomLetter = value
-        setAreAllUsersReady()
+        self.areAllUsersReady = setAreAllUsersReady()
     }
     
     func leaderSocketIdChanged(value: String) {
@@ -113,36 +113,34 @@ class OnlineGameManager: ObservableObject {
     
     func listNumberChanged(value: Int) {
         self.listNumber = value
-        gameState = .InProgress
+        self.gameState = .InProgress
     }
     
     // MARK: Other functions
     
-    func setAreAllUsersReady() {
-        var allReady = false
+    func setAreAllUsersReady() -> Bool {
         // If there is only one user, not ready
         if users.count == 1 {
-            allReady = false
+            return false
         }
+        
         // if a letter hasn't been picked, not ready
-        else if randomLetter.isEmpty {
-            allReady = false
-        } else {
-            // look through all the users
-            for user in users {
-                // If the user is the leader, skip because it doesn't matter
-                if user.id.uuidString == self.leaderSocketId {
-                    continue
-                }
-                // If the user isn't ready
-                if !user.ready {
-                    allReady = false
-                } else {
-                    allReady = true
-                }
+        if randomLetter.isEmpty {
+            return false
+        }
+        
+        // look through all the users
+        for user in users {
+            // If the user is the leader, skip because it doesn't matter
+            if user.id.uuidString == self.leaderSocketId {
+                continue
+            }
+            // If the user isn't ready
+            if !user.ready {
+                return false
             }
         }
         
-        self.areAllUsersReady = allReady
+        return true
     }
 }
