@@ -53,7 +53,7 @@ struct ScoreboardView_Previews: PreviewProvider {
                                     score: 0,
                                     ready: false,
                                     isLeader: true),
-                                User(name: "Bri",
+                                User(name: "Long name",
                                      score: 1,
                                      ready: true,
                                      isLeader: false)

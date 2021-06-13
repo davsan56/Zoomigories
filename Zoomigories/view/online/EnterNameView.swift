@@ -61,6 +61,7 @@ struct EnterNameView: View {
                     .background(Color.blue)
                     .cornerRadius(5)
                 }
+            .disabled(name.isEmpty)
         }
         .padding()
     }
@@ -68,9 +69,9 @@ struct EnterNameView: View {
 
 struct EnterNameView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
+//        Group {
             EnterNameView(onlineGameManager: OnlineGameManager(), showEnterCodeView: true)
-            EnterNameView(onlineGameManager: OnlineGameManager(), showEnterCodeView: false)
-        }
+//            EnterNameView(onlineGameManager: OnlineGameManager(), showEnterCodeView: false)
+//        }
     }
 }
