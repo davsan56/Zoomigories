@@ -2,7 +2,7 @@
   "object": {
     "pins": [
       {
-        "package": "SocketIO",
+        "package": "socket.io-client-swift",
         "repositoryURL": "https://github.com/socketio/socket.io-client-swift.git",
         "state": {
           "branch": null,

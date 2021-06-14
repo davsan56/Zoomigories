@@ -76,6 +76,10 @@ class OnlineGameManager: ObservableObject {
         SocketHelper.sharedInstance.submitScore(score: score)
     }
     
+    func scoring() {
+        SocketHelper.sharedInstance.scoring()
+    }
+    
     // MARK: Delegate functions recieving updates from server
     
     func codeDidChange(newCode: String) {

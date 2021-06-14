@@ -43,6 +43,8 @@
 		86B345CC25C0F30100302A96 /* LeaderButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345CB25C0F30100302A96 /* LeaderButtons.swift */; };
 		86B345CF25C0F33B00302A96 /* ReadyUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */; };
 		86B345F925C1C64400302A96 /* OnlineGameViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */; };
+		86DD6C4E267007E500B8035D /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD6C4D267007E500B8035D /* SubmitButton.swift */; };
+		86DD6C5226700DFD00B8035D /* MainViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD6C5126700DFD00B8035D /* MainViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyUpButton.swift; sourceTree = "<group>"; };
 		86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameViewHolder.swift; sourceTree = "<group>"; };
 		86DAE66025FD2401009629E6 /* Zoomigories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zoomigories.entitlements; sourceTree = "<group>"; };
+		86DD6C4D267007E500B8035D /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
+		86DD6C5126700DFD00B8035D /* MainViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +252,8 @@
 				864173A225B289DA00AD5625 /* CategoriesTextField.swift */,
 				864173FD25B37B9E00AD5625 /* ListOfCategories.swift */,
 				867E0E0925BE1F1A00459CF1 /* ZoomigoriesMainView.swift */,
+				86DD6C4D267007E500B8035D /* SubmitButton.swift */,
+				86DD6C5126700DFD00B8035D /* MainViewHeader.swift */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DD6C4E267007E500B8035D /* SubmitButton.swift in Sources */,
 				864173C325B34BBC00AD5625 /* AppDelegate.swift in Sources */,
 				8694BD4725C5E47800ED9416 /* CodeTextBindingManager.swift in Sources */,
 				8641738925B27D3A00AD5625 /* CategoriesGame.swift in Sources */,
@@ -419,6 +426,7 @@
 				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,
 				8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */,
 				867E0E2925BFC1FB00459CF1 /* SocketHelper.swift in Sources */,
+				86DD6C5226700DFD00B8035D /* MainViewHeader.swift in Sources */,
 				864173A325B289DA00AD5625 /* CategoriesTextField.swift in Sources */,
 				867E0E2D25C05D1400459CF1 /* OnlineGameManager.swift in Sources */,
 				864173D425B34E5D00AD5625 /* DatabaseManager.swift in Sources */,

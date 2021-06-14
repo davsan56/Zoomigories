@@ -18,6 +18,9 @@ struct HomeScreen: View {
                 Text("Zoomigories!")
                     .font(.title)
                     .padding(.bottom)
+                NavigationLink(destination: EmptyView()) {
+                    EmptyView()
+                }
                 NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: false)) {
                     Text("Start a new game")
                         .foregroundColor(.white)
@@ -25,6 +28,10 @@ struct HomeScreen: View {
                         .background(Color.blue)
                         .cornerRadius(5)
                 }
+                NavigationLink(destination: EmptyView()) {
+                    EmptyView()
+                }
+                .padding(.bottom)
                 NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: true)) {
                     Text("Join a game")
                         .foregroundColor(.white)

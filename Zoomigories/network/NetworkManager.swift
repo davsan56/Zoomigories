@@ -21,6 +21,10 @@ class NetworkManager: ObservableObject {
         self.categoryList = categories
     }
     
+    init(stopEditing: Bool) {
+        self.stopEditing = stopEditing
+    }
+    
     func getCategoryList(listNumber: Int) {
         self.categoryList = nil
         self.error = false
