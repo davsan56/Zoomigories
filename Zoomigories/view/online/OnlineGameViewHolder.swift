@@ -19,9 +19,6 @@ struct OnlineGameViewHolder: View {
     @ViewBuilder
     var body: some View {
         VStack {
-            NavigationLink(destination: EmptyView()) {
-                EmptyView()
-            }
             // Enter Name
             if onlineGameManager.gameState == .EnterName {
                 EnterNameView(onlineGameManager: onlineGameManager, showEnterCodeView: isJoiningGame)
