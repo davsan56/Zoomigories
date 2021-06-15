@@ -573,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SUPPORTS_MACCATALYST = YES;
@@ -599,7 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SUPPORTS_MACCATALYST = YES;
