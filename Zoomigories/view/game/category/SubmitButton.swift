@@ -15,14 +15,10 @@ struct SubmitButton: View {
     
     var body: some View {
         Button(action: {
-            self.showingAlert.toggle()
+            self.handleSubmitPressed()
         }) {
             Text("Submit \(networkManager.totalPointsThisRound) point\(networkManager.totalPointsThisRound == 1 ? "" : "s")")
                 .foregroundColor(.white)
-        }
-        .alert(isPresented: $showingAlert) {
-            Alert(title: Text("Are you sure?"), message: Text("Is the game over? You will lose your answers if you continue"), primaryButton: .cancel(Text("No")), secondaryButton: .default(Text("Yes")) {
-                    self.handleSubmitPressed()})
         }
         .padding()
         .frame(minWidth: 0, maxWidth: .infinity)
