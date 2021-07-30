@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		423279842EB4E8D624F427D7 /* Pods_Scatagories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */; };
 		8607AF1825C26F8D0081DB9D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607AF1625C26F8D0081DB9D /* TimerView.swift */; };
 		8607AF1925C26F8D0081DB9D /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607AF1725C26F8D0081DB9D /* TimerManager.swift */; };
 		8641738725B27D3A00AD5625 /* CatagoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641738625B27D3A00AD5625 /* CatagoriesApp.swift */; };
@@ -29,6 +28,7 @@
 		8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740625B3B4C600AD5625 /* PointStepper.swift */; };
 		8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */; };
 		8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */; };
+		8676273826B48C1E00D2284D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8676273726B48C1E00D2284D /* FirebaseDatabase */; };
 		867E0E0A25BE1F1A00459CF1 /* ZoomigoriesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E0925BE1F1A00459CF1 /* ZoomigoriesMainView.swift */; };
 		867E0E1E25BFA34600459CF1 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 867E0E1D25BFA34600459CF1 /* SocketIO */; };
 		867E0E2225BFBFDF00459CF1 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E2125BFBFDF00459CF1 /* EnterNameView.swift */; };
@@ -48,9 +48,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A0B84C8E07E631689253B97 /* Pods-Scatagories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scatagories.debug.xcconfig"; path = "Target Support Files/Pods-Scatagories/Pods-Scatagories.debug.xcconfig"; sourceTree = "<group>"; };
-		48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scatagories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84468D09743EA73E1BB93A2E /* Pods-Scatagories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scatagories.release.xcconfig"; path = "Target Support Files/Pods-Scatagories/Pods-Scatagories.release.xcconfig"; sourceTree = "<group>"; };
 		8607AF1625C26F8D0081DB9D /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8607AF1725C26F8D0081DB9D /* TimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		8641738325B27D3A00AD5625 /* Zoomigories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomigories.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				423279842EB4E8D624F427D7 /* Pods_Scatagories.framework in Frameworks */,
+				8676273826B48C1E00D2284D /* FirebaseDatabase in Frameworks */,
 				867E0E1E25BFA34600459CF1 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,23 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52274691C9227F8A31398DD6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0A0B84C8E07E631689253B97 /* Pods-Scatagories.debug.xcconfig */,
-				84468D09743EA73E1BB93A2E /* Pods-Scatagories.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		6E475DFF70052F7C2A4DD57F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48F48D477FC29B84D8E10134 /* Pods_Scatagories.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8607AF1525C26F810081DB9D /* timer */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +117,6 @@
 				86DAE66025FD2401009629E6 /* Zoomigories.entitlements */,
 				8641738525B27D3A00AD5625 /* Zoomigories */,
 				8641738425B27D3A00AD5625 /* Products */,
-				52274691C9227F8A31398DD6 /* Pods */,
-				6E475DFF70052F7C2A4DD57F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,11 +266,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8641739225B27D3D00AD5625 /* Build configuration list for PBXNativeTarget "Scatagories" */;
 			buildPhases = (
-				0D31AF7412C4F6E84298204D /* [CP] Check Pods Manifest.lock */,
 				8641737F25B27D3A00AD5625 /* Sources */,
 				8641738025B27D3A00AD5625 /* Frameworks */,
 				8641738125B27D3A00AD5625 /* Resources */,
-				8199D0565966AB55E23F528E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,6 +277,7 @@
 			name = Scatagories;
 			packageProductDependencies = (
 				867E0E1D25BFA34600459CF1 /* SocketIO */,
+				8676273726B48C1E00D2284D /* FirebaseDatabase */,
 			);
 			productName = Scatagories;
 			productReference = 8641738325B27D3A00AD5625 /* Zoomigories.app */;
@@ -331,6 +308,7 @@
 			mainGroup = 8641737A25B27D3A00AD5625;
 			packageReferences = (
 				867E0E1C25BFA34600459CF1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				8676273626B48C1E00D2284D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 8641738425B27D3A00AD5625 /* Products */;
 			projectDirPath = "";
@@ -354,48 +332,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0D31AF7412C4F6E84298204D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Scatagories-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8199D0565966AB55E23F528E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scatagories/Pods-Scatagories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scatagories/Pods-Scatagories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scatagories/Pods-Scatagories-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8641737F25B27D3A00AD5625 /* Sources */ = {
@@ -558,7 +494,6 @@
 		};
 		8641739325B27D3D00AD5625 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A0B84C8E07E631689253B97 /* Pods-Scatagories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -584,7 +519,6 @@
 		};
 		8641739425B27D3D00AD5625 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84468D09743EA73E1BB93A2E /* Pods-Scatagories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -632,6 +566,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8676273626B48C1E00D2284D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		867E0E1C25BFA34600459CF1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
@@ -643,6 +585,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8676273726B48C1E00D2284D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8676273626B48C1E00D2284D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		867E0E1D25BFA34600459CF1 /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 867E0E1C25BFA34600459CF1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
