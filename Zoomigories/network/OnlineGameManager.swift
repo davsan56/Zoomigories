@@ -136,7 +136,7 @@ class OnlineGameManager: ObservableObject {
         // look through all the users
         for user in users {
             // If the user is the leader, skip because it doesn't matter
-            if user.id.uuidString == self.leaderSocketId {
+            if user.isLeader {
                 continue
             }
             // If the user isn't ready

@@ -155,7 +155,7 @@ class SocketHelper {
     }
     
     func scoring() {
-        socket.emit("scoring")
+        socket.emit("scoring", ["code": gameCode])
     }
     
     // MARK: Other helper functions
