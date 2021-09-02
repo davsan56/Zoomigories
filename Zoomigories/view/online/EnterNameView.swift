@@ -9,9 +9,7 @@ import SwiftUI
 
 struct EnterNameView: View {
     @StateObject var onlineGameManager: OnlineGameManager
-    @ObservedObject var codeTextBindingManager = CodeTextBindingManager(limit: 4)
     @State var showEnterCodeView: Bool
-    
     @State private var name: String = ""
     
     @ViewBuilder
@@ -37,7 +35,12 @@ struct EnterNameView: View {
             if showEnterCodeView {
                 HStack {
                     Text("Code: ")
-                    TextField("Enter code", text: $codeTextBindingManager.code)
+                    TextField("Enter code", text: $onlineGameManager.gameCode)
+                        .onChange(of: onlineGameManager.gameCode, perform: { newValue in
+                            if newValue.count > 4 {
+                                onlineGameManager.gameCode = String(onlineGameManager.gameCode.dropLast())
+                            }
+                        })
                         .overlay(
                             VStack {
                                 Divider()
@@ -45,12 +48,13 @@ struct EnterNameView: View {
                                 }
                         )
                         .autocapitalization(UITextAutocapitalizationType.allCharacters)
+                        .disableAutocorrection(true)
                 }
                 .padding()
             }
             Button(action: {
                 if showEnterCodeView {
-                    onlineGameManager.joinGame(code: codeTextBindingManager.code, name: name)
+                    onlineGameManager.joinGame(code: onlineGameManager.gameCode, name: name)
                 } else {
                     onlineGameManager.startNewGame(with: name)
                 }

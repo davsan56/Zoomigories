@@ -34,8 +34,18 @@ struct RoundOverView: View {
                 }
             }
         }
-        .navigationTitle("Zoomigories")
         .padding()
+        .navigationTitle("Zoomigories")
+        .toolbar {
+            Button(action: {
+                let textShare = "Join my Zoomigories game! "
+                guard let urlShare = URL(string: "Zoomigories://joingame?code=\(onlineGameManager.gameCode)") else { return }
+                let activityVC = UIActivityViewController(activityItems: [textShare, urlShare], applicationActivities: nil)
+                UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+            }) {
+                Image(systemName: "square.and.arrow.up")
+            }
+        }
     }
 }
 

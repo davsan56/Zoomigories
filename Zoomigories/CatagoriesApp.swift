@@ -10,10 +10,17 @@ import SwiftUI
 @main
 struct CatagoriesApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State var joinGame: Bool = false
+    @StateObject var onlineGameManager = OnlineGameManager()
     
+    @ViewBuilder
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            HomeScreen(onlineGameManager: onlineGameManager, joinGameFromDeepLink: $joinGame)
+                .onOpenURL { url in
+                    self.joinGame = true
+                    onlineGameManager.gameCode = url.absoluteString.components(separatedBy: "=")[1]
+                }
         }
     }
 }
