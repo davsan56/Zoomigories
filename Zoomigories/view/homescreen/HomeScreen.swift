@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var networkManager = NetworkManager()
-    @StateObject var onlineGameManager = OnlineGameManager()
+    @StateObject var onlineGameManager: OnlineGameManager
+    
+    @Binding var joinGameFromDeepLink: Bool
     
     @ViewBuilder
     var body: some View {
@@ -32,7 +34,7 @@ struct HomeScreen: View {
                     EmptyView()
                 }
                 .padding(.bottom)
-                NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: true)) {
+                NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: true), isActive: $joinGameFromDeepLink) {
                     Text("Join a game")
                         .foregroundColor(.white)
                         .padding()
@@ -41,12 +43,15 @@ struct HomeScreen: View {
                 }
             }
         }
+        .onAppear(perform: {
+            onlineGameManager.gameCode = ""
+        })
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(onlineGameManager: OnlineGameManager(), joinGameFromDeepLink: .constant(false))
     }
 }

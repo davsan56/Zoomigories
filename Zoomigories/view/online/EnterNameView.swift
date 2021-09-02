@@ -10,7 +10,6 @@ import SwiftUI
 struct EnterNameView: View {
     @StateObject var onlineGameManager: OnlineGameManager
     @State var showEnterCodeView: Bool
-    @State var code: String = ""
     @State private var name: String = ""
     
     @ViewBuilder
@@ -36,10 +35,12 @@ struct EnterNameView: View {
             if showEnterCodeView {
                 HStack {
                     Text("Code: ")
-                    TextField("Enter code", text: $code)
-                        .onReceive(code.publisher.collect()) {
-                                self.code = String($0.prefix(4))
+                    TextField("Enter code", text: $onlineGameManager.gameCode)
+                        .onChange(of: onlineGameManager.gameCode, perform: { newValue in
+                            if newValue.count > 4 {
+                                onlineGameManager.gameCode = String(onlineGameManager.gameCode.dropLast())
                             }
+                        })
                         .overlay(
                             VStack {
                                 Divider()
@@ -53,7 +54,7 @@ struct EnterNameView: View {
             }
             Button(action: {
                 if showEnterCodeView {
-                    onlineGameManager.joinGame(code: code, name: name)
+                    onlineGameManager.joinGame(code: onlineGameManager.gameCode, name: name)
                 } else {
                     onlineGameManager.startNewGame(with: name)
                 }
