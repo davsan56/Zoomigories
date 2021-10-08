@@ -45,6 +45,8 @@
 		86B345F925C1C64400302A96 /* OnlineGameViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */; };
 		86DD6C4E267007E500B8035D /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD6C4D267007E500B8035D /* SubmitButton.swift */; };
 		86DD6C5226700DFD00B8035D /* MainViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD6C5126700DFD00B8035D /* MainViewHeader.swift */; };
+		86F47741271091140071B79D /* ScoreboardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F47740271091140071B79D /* ScoreboardHeader.swift */; };
+		86F47743271091270071B79D /* ScoreboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F47742271091270071B79D /* ScoreboardRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		86DAE66025FD2401009629E6 /* Zoomigories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zoomigories.entitlements; sourceTree = "<group>"; };
 		86DD6C4D267007E500B8035D /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		86DD6C5126700DFD00B8035D /* MainViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewHeader.swift; sourceTree = "<group>"; };
+		86F47740271091140071B79D /* ScoreboardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardHeader.swift; sourceTree = "<group>"; };
+		86F47742271091270071B79D /* ScoreboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,8 @@
 				86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */,
 				86B345CB25C0F30100302A96 /* LeaderButtons.swift */,
 				86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */,
+				86F47740271091140071B79D /* ScoreboardHeader.swift */,
+				86F47742271091270071B79D /* ScoreboardRow.swift */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,
 				8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */,
 				867E0E2925BFC1FB00459CF1 /* SocketHelper.swift in Sources */,
+				86F47743271091270071B79D /* ScoreboardRow.swift in Sources */,
 				86DD6C5226700DFD00B8035D /* MainViewHeader.swift in Sources */,
 				864173A325B289DA00AD5625 /* CategoriesTextField.swift in Sources */,
 				867E0E2D25C05D1400459CF1 /* OnlineGameManager.swift in Sources */,
@@ -370,6 +377,7 @@
 				86B345C625C0C37F00302A96 /* ScoreboardView.swift in Sources */,
 				8694BD3425C33C7200ED9416 /* Helper.swift in Sources */,
 				867E0E3225C064B400459CF1 /* User.swift in Sources */,
+				86F47741271091140071B79D /* ScoreboardHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +516,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.3;
+				MARKETING_VERSION = 0.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SUPPORTS_MACCATALYST = YES;
@@ -533,7 +541,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.3;
+				MARKETING_VERSION = 0.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SUPPORTS_MACCATALYST = YES;

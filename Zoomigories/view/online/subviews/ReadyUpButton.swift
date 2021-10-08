@@ -28,11 +28,7 @@ struct ReadyUpButton: View {
 
 struct ReadyUpButton_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ReadyUpButton(onlineGameManager: OnlineGameManager())
-                .previewLayout(.sizeThatFits)
-            ReadyUpButton(onlineGameManager: OnlineGameManager(), ready: true)
-                .previewLayout(.sizeThatFits)
-        }
+        ReadyUpButton(onlineGameManager: OnlineGameManager(), ready: true)
+            .previewLayout(.sizeThatFits)
     }
 }

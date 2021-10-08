@@ -41,7 +41,7 @@ struct CategoriesTextField: View {
     
     private func getBorderColor() -> Color {
         if text.isEmpty {
-            return .black
+            return .primary
         } else {
             if text.starts(with: letter) {
                 return .green
