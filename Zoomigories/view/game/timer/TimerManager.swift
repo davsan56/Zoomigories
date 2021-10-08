@@ -10,7 +10,7 @@ import Foundation
 class TimerManager: ObservableObject {
     var timer: Timer = Timer()
     @Published var timeRemaining = ""
-    var internalSeconds = Env.isProduction() ? 180 : 75 {
+    var internalSeconds = Env.isProduction() ? 180 : 10 {
         didSet {
             timeRemaining = convertSeconds()
         }

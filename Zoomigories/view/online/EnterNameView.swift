@@ -24,12 +24,7 @@ struct EnterNameView: View {
             HStack {
                 Text("Name: ")
                 TextField("Enter name", text: $name)
-                    .overlay(
-                        VStack {
-                            Divider()
-                                .offset(x: 0, y: 15)
-                            }
-                    )
+                    .textFieldStyle(.roundedBorder)
             }
             .padding()
             if showEnterCodeView {
@@ -41,12 +36,7 @@ struct EnterNameView: View {
                                 onlineGameManager.gameCode = String(onlineGameManager.gameCode.dropLast())
                             }
                         })
-                        .overlay(
-                            VStack {
-                                Divider()
-                                    .offset(x: 0, y: 15)
-                                }
-                        )
+                        .textFieldStyle(.roundedBorder)
                         .autocapitalization(UITextAutocapitalizationType.allCharacters)
                         .disableAutocorrection(true)
                 }
