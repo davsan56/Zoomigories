@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var networkManager = NetworkManager()
-    @StateObject var onlineGameManager = OnlineGameManager()
+    @StateObject var onlineGameManager: OnlineGameManager
+    
+    @Binding var joinGameFromDeepLink: Bool
     
     @ViewBuilder
     var body: some View {
@@ -18,6 +20,9 @@ struct HomeScreen: View {
                 Text("Zoomigories!")
                     .font(.title)
                     .padding(.bottom)
+                NavigationLink(destination: EmptyView()) {
+                    EmptyView()
+                }
                 NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: false)) {
                     Text("Start a new game")
                         .foregroundColor(.white)
@@ -25,7 +30,11 @@ struct HomeScreen: View {
                         .background(Color.blue)
                         .cornerRadius(5)
                 }
-                NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: true)) {
+                NavigationLink(destination: EmptyView()) {
+                    EmptyView()
+                }
+                .padding(.bottom)
+                NavigationLink(destination: OnlineGameViewHolder(onlineGameManager: onlineGameManager, isJoiningGame: true), isActive: $joinGameFromDeepLink) {
                     Text("Join a game")
                         .foregroundColor(.white)
                         .padding()
@@ -34,12 +43,15 @@ struct HomeScreen: View {
                 }
             }
         }
+        .onAppear(perform: {
+            onlineGameManager.gameCode = ""
+        })
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(onlineGameManager: OnlineGameManager(), joinGameFromDeepLink: .constant(false))
     }
 }

@@ -14,13 +14,15 @@ struct RoundOverView: View {
     var body: some View {
         VStack {
             Spacer()
-            HStack {
+            VStack {
                 Text(onlineGameManager.gameCode)
                     .font(.title)
                 if !onlineGameManager.randomLetter.isEmpty {
                     Text("Letter: \(onlineGameManager.randomLetter)")
+                        .font(.headline)
                 }
             }
+            .padding([.bottom])
             ScoreboardView(onlineGameManager: onlineGameManager)
             Spacer()
             VStack {
@@ -33,6 +35,17 @@ struct RoundOverView: View {
             }
         }
         .padding()
+        .navigationTitle("Zoomigories")
+        .toolbar {
+            Button(action: {
+                let textShare = "Join my Zoomigories game! "
+                guard let urlShare = URL(string: "Zoomigories://joingame?code=\(onlineGameManager.gameCode)") else { return }
+                let activityVC = UIActivityViewController(activityItems: [textShare, urlShare], applicationActivities: nil)
+                UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+            }) {
+                Image(systemName: "square.and.arrow.up")
+            }
+        }
     }
 }
 

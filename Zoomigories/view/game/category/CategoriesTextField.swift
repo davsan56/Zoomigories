@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import SocketIO
 
 struct CategoriesTextField: View {
     @ObservedObject var networkManager: NetworkManager
     
     let category: Category
+    let letter: String
     
     @State private var text: String = ""
     @State private var points: String = "0"
@@ -29,16 +31,29 @@ struct CategoriesTextField: View {
                     )
                     .disabled(networkManager.stopEditing)
             }
-            PointStepper(networkManager: networkManager)
+            if networkManager.stopEditing {
+                PointStepper(networkManager: networkManager)
+            }
         }
         .padding()
-        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-        .padding()
+        .border(getBorderColor())
+    }
+    
+    private func getBorderColor() -> Color {
+        if text.isEmpty {
+            return .black
+        } else {
+            if text.starts(with: letter) {
+                return .green
+            } else {
+                return .red
+            }
+        }
     }
 }
 
 struct ScategoriesTextField_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesTextField(networkManager: NetworkManager(), category: Category(number: "1", categoryDescription: "short"))
+        CategoriesTextField(networkManager: NetworkManager(stopEditing: false), category: Category(number: "2", categoryDescription: "An item in this room"), letter: "H")
     }
 }

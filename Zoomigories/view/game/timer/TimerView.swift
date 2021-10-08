@@ -13,6 +13,7 @@ struct TimerView: View {
     @ViewBuilder
     var body: some View {
         Text("Time: \(timerManager.timeRemaining)")
+            .font(.title)
             .onAppear(perform: timerManager.startTimer)
             .padding([.leading])
     }

@@ -8,28 +8,23 @@
 import SwiftUI
 
 struct ZoomigoriesMainView: View {
-    @StateObject var timerManager: TimerManager = TimerManager()
+    
     @StateObject var onlineGameManager: OnlineGameManager
     @StateObject var networkManager: NetworkManager
     
+    @ViewBuilder
     var body: some View {
-        ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, content: {
-            VStack {
-                HStack {
-                    TimerView(timerManager: timerManager)
-                        .alert(isPresented: $timerManager.timerDone, content: {
-                            Alert(title: Text("Times up!"),
-                                  message: Text("Time to tally the points"),
-                                  dismissButton: .default(Text("OK")) {
-                                    disableCategoryTextFields()
-                                  })
-                        })
-                    Text("Letter: \(onlineGameManager.randomLetter)")
-                    PointsView(networkManager: networkManager, onlineGameManager: onlineGameManager)
+        VStack {
+            MainViewHeader(networkManager: networkManager, onlineGameManager: onlineGameManager)
+            ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, content: {
+                VStack {
+                    ListOfCategories(networkManager: networkManager, categories: networkManager.categoryList?.categories ?? [], letter: onlineGameManager.randomLetter)
                 }
-                ListOfCategories(networkManager: networkManager, categories: networkManager.categoryList?.categories ?? [])
+            })
+            if networkManager.stopEditing {
+                SubmitButton(networkManager: networkManager, onlineGameManager: onlineGameManager)
             }
-        })
+        }
         .onAppear(perform: {
             networkManager.stopEditing = false
         })

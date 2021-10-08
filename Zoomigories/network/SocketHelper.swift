@@ -111,6 +111,11 @@ class SocketHelper {
         socket.on("invalidGame") { data, ack in
             self.errorMessage = "Bad code"
         }
+        
+        // Just used to keep the user connected
+        socket.on("scoring") { data, ack in
+            print("now scoring")
+        }
     }
     
     // MARK: Functions UI can call
@@ -147,6 +152,10 @@ class SocketHelper {
     
     func submitScore(score: Int) {
         socket.emit("submittedScore", ["code": gameCode, "score": score])
+    }
+    
+    func scoring() {
+        socket.emit("scoring", ["code": gameCode])
     }
     
     // MARK: Other helper functions
