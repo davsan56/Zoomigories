@@ -51,7 +51,6 @@ struct RoundOverView: View {
 
 struct RoundOverView_Previews: PreviewProvider {
     static var previews: some View {
-        RoundOverView(onlineGameManager: OnlineGameManager(code: "ABCD", users: [User(name: "David", score: 0, ready: false, isLeader: true), User(name: "Bri", score: 1, ready: true, isLeader: false)], isLeader: false))
         RoundOverView(onlineGameManager: OnlineGameManager(code: "ABCD", users: [User(name: "David", score: 0, ready: true, isLeader: false), User(name: "Bri", score: 1, ready: false, isLeader: true)], isLeader: true))
     }
 }

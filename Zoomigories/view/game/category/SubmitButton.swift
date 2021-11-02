@@ -19,9 +19,9 @@ struct SubmitButton: View {
         }) {
             Text("Submit \(networkManager.totalPointsThisRound) point\(networkManager.totalPointsThisRound == 1 ? "" : "s")")
                 .foregroundColor(.white)
+                .frame(minWidth: 0, maxWidth: .infinity)
         }
         .padding()
-        .frame(minWidth: 0, maxWidth: .infinity)
         .background(Color.blue)
         .cornerRadius(5)
         .padding([.leading, .trailing], 20)

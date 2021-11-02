@@ -10,34 +10,20 @@ import SwiftUI
 struct ScoreboardView: View {
     @StateObject var onlineGameManager: OnlineGameManager
     
+    let columns = [
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                Text("Name")
-                    .bold()
-                Spacer()
-                Text("Score")
-                    .bold()
-                Spacer()
-                Text("Ready")
-                    .bold()
-                Spacer()
-            }
+            ScoreboardHeader()
             Divider()
-            ForEach(onlineGameManager.users) { user in
-                HStack {
-                    Spacer()
-                    Text(user.name)
-                    Spacer()
-                    Text("\(user.score)")
-                    Spacer()
-                    Image(systemName: user.isLeader ? "star.circle.fill" : user.ready ? "checkmark.circle.fill" : "xmark.circle.fill")
-                        .foregroundColor(user.isLeader ? .yellow : user.ready ? .green : .red)
-                    Spacer()
+            LazyVGrid(columns: columns, spacing: 10) {
+                ForEach(onlineGameManager.users) { user in
+                    ScoreboardRow(user: user)
                 }
-                Divider()
             }
+            .padding(.horizontal)
         }
     }
 }

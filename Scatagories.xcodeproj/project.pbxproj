@@ -17,17 +17,12 @@
 		8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641739B25B2887B00AD5625 /* CategoryList.swift */; };
 		864173A325B289DA00AD5625 /* CategoriesTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173A225B289DA00AD5625 /* CategoriesTextField.swift */; };
 		864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173A725B28F7000AD5625 /* NetworkManager.swift */; };
-		864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173AB25B343ED00AD5625 /* ErrorView.swift */; };
-		864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173AE25B3447F00AD5625 /* LoadingView.swift */; };
 		864173B225B34AF400AD5625 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 864173B125B34AF400AD5625 /* GoogleService-Info.plist */; };
 		864173C325B34BBC00AD5625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173C225B34BBC00AD5625 /* AppDelegate.swift */; };
 		864173D425B34E5D00AD5625 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173D325B34E5D00AD5625 /* DatabaseManager.swift */; };
 		864173FE25B37B9E00AD5625 /* ListOfCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864173FD25B37B9E00AD5625 /* ListOfCategories.swift */; };
 		8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740025B37D0C00AD5625 /* HomeScreen.swift */; };
-		8641740425B382DF00AD5625 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740325B382DF00AD5625 /* PointsView.swift */; };
 		8641740725B3B4C600AD5625 /* PointStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740625B3B4C600AD5625 /* PointStepper.swift */; };
-		8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */; };
-		8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */; };
 		8676273826B48C1E00D2284D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8676273726B48C1E00D2284D /* FirebaseDatabase */; };
 		867E0E0A25BE1F1A00459CF1 /* ZoomigoriesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E0925BE1F1A00459CF1 /* ZoomigoriesMainView.swift */; };
 		867E0E1E25BFA34600459CF1 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 867E0E1D25BFA34600459CF1 /* SocketIO */; };
@@ -37,7 +32,6 @@
 		867E0E2D25C05D1400459CF1 /* OnlineGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E2C25C05D1400459CF1 /* OnlineGameManager.swift */; };
 		867E0E3225C064B400459CF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E0E3125C064B400459CF1 /* User.swift */; };
 		8694BD3425C33C7200ED9416 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694BD3325C33C7200ED9416 /* Helper.swift */; };
-		8694BD4725C5E47800ED9416 /* CodeTextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694BD4625C5E47800ED9416 /* CodeTextBindingManager.swift */; };
 		86B345C625C0C37F00302A96 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345C525C0C37F00302A96 /* ScoreboardView.swift */; };
 		86B345C925C0C3DF00302A96 /* PublicButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */; };
 		86B345CC25C0F30100302A96 /* LeaderButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345CB25C0F30100302A96 /* LeaderButtons.swift */; };
@@ -45,6 +39,8 @@
 		86B345F925C1C64400302A96 /* OnlineGameViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */; };
 		86DD6C4E267007E500B8035D /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD6C4D267007E500B8035D /* SubmitButton.swift */; };
 		86DD6C5226700DFD00B8035D /* MainViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD6C5126700DFD00B8035D /* MainViewHeader.swift */; };
+		86F47741271091140071B79D /* ScoreboardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F47740271091140071B79D /* ScoreboardHeader.swift */; };
+		86F47743271091270071B79D /* ScoreboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F47742271091270071B79D /* ScoreboardRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,17 +56,12 @@
 		8641739B25B2887B00AD5625 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		864173A225B289DA00AD5625 /* CategoriesTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTextField.swift; sourceTree = "<group>"; };
 		864173A725B28F7000AD5625 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		864173AB25B343ED00AD5625 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		864173AE25B3447F00AD5625 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		864173B125B34AF400AD5625 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		864173C225B34BBC00AD5625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864173D325B34E5D00AD5625 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		864173FD25B37B9E00AD5625 /* ListOfCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCategories.swift; sourceTree = "<group>"; };
 		8641740025B37D0C00AD5625 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		8641740325B382DF00AD5625 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		8641740625B3B4C600AD5625 /* PointStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStepper.swift; sourceTree = "<group>"; };
-		8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLetterPicker.swift; sourceTree = "<group>"; };
-		8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPointsView.swift; sourceTree = "<group>"; };
 		867E0E0925BE1F1A00459CF1 /* ZoomigoriesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomigoriesMainView.swift; sourceTree = "<group>"; };
 		867E0E2125BFBFDF00459CF1 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
 		867E0E2525BFC18600459CF1 /* RoundOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundOverView.swift; sourceTree = "<group>"; };
@@ -78,7 +69,6 @@
 		867E0E2C25C05D1400459CF1 /* OnlineGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameManager.swift; sourceTree = "<group>"; };
 		867E0E3125C064B400459CF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8694BD3325C33C7200ED9416 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		8694BD4625C5E47800ED9416 /* CodeTextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextBindingManager.swift; sourceTree = "<group>"; };
 		86B345C525C0C37F00302A96 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicButtonsView.swift; sourceTree = "<group>"; };
 		86B345CB25C0F30100302A96 /* LeaderButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderButtons.swift; sourceTree = "<group>"; };
@@ -87,6 +77,8 @@
 		86DAE66025FD2401009629E6 /* Zoomigories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zoomigories.entitlements; sourceTree = "<group>"; };
 		86DD6C4D267007E500B8035D /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		86DD6C5126700DFD00B8035D /* MainViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewHeader.swift; sourceTree = "<group>"; };
+		86F47740271091140071B79D /* ScoreboardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardHeader.swift; sourceTree = "<group>"; };
+		86F47742271091270071B79D /* ScoreboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				8641740025B37D0C00AD5625 /* HomeScreen.swift */,
-				8641740C25B4A5BA00AD5625 /* TotalPointsView.swift */,
-				8641740925B4A57B00AD5625 /* RandomLetterPicker.swift */,
 			);
 			path = homescreen;
 			sourceTree = "<group>";
@@ -209,8 +199,6 @@
 				8641741225B4A75C00AD5625 /* category */,
 				8641741125B4A6FC00AD5625 /* points */,
 				8641738825B27D3A00AD5625 /* CategoriesGame.swift */,
-				864173AB25B343ED00AD5625 /* ErrorView.swift */,
-				864173AE25B3447F00AD5625 /* LoadingView.swift */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -219,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				8641740625B3B4C600AD5625 /* PointStepper.swift */,
-				8641740325B382DF00AD5625 /* PointsView.swift */,
 			);
 			path = points;
 			sourceTree = "<group>";
@@ -243,7 +230,6 @@
 				867E0E2525BFC18600459CF1 /* RoundOverView.swift */,
 				86B345F825C1C64400302A96 /* OnlineGameViewHolder.swift */,
 				867E0E2125BFBFDF00459CF1 /* EnterNameView.swift */,
-				8694BD4625C5E47800ED9416 /* CodeTextBindingManager.swift */,
 			);
 			path = online;
 			sourceTree = "<group>";
@@ -255,6 +241,8 @@
 				86B345C825C0C3DF00302A96 /* PublicButtonsView.swift */,
 				86B345CB25C0F30100302A96 /* LeaderButtons.swift */,
 				86B345CE25C0F33B00302A96 /* ReadyUpButton.swift */,
+				86F47740271091140071B79D /* ScoreboardHeader.swift */,
+				86F47742271091270071B79D /* ScoreboardRow.swift */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -340,16 +328,13 @@
 			files = (
 				86DD6C4E267007E500B8035D /* SubmitButton.swift in Sources */,
 				864173C325B34BBC00AD5625 /* AppDelegate.swift in Sources */,
-				8694BD4725C5E47800ED9416 /* CodeTextBindingManager.swift in Sources */,
 				8641738925B27D3A00AD5625 /* CategoriesGame.swift in Sources */,
 				86B345C925C0C3DF00302A96 /* PublicButtonsView.swift in Sources */,
 				864173FE25B37B9E00AD5625 /* ListOfCategories.swift in Sources */,
-				864173AC25B343ED00AD5625 /* ErrorView.swift in Sources */,
 				8607AF1925C26F8D0081DB9D /* TimerManager.swift in Sources */,
 				86B345F925C1C64400302A96 /* OnlineGameViewHolder.swift in Sources */,
 				8641740125B37D0C00AD5625 /* HomeScreen.swift in Sources */,
 				867E0E2225BFBFDF00459CF1 /* EnterNameView.swift in Sources */,
-				8641740D25B4A5BA00AD5625 /* TotalPointsView.swift in Sources */,
 				8607AF1825C26F8D0081DB9D /* TimerView.swift in Sources */,
 				8641738725B27D3A00AD5625 /* CatagoriesApp.swift in Sources */,
 				86B345CF25C0F33B00302A96 /* ReadyUpButton.swift in Sources */,
@@ -359,17 +344,16 @@
 				864173A825B28F7000AD5625 /* NetworkManager.swift in Sources */,
 				8641739C25B2887B00AD5625 /* CategoryList.swift in Sources */,
 				867E0E2625BFC18600459CF1 /* RoundOverView.swift in Sources */,
-				864173AF25B3447F00AD5625 /* LoadingView.swift in Sources */,
-				8641740A25B4A57B00AD5625 /* RandomLetterPicker.swift in Sources */,
 				867E0E2925BFC1FB00459CF1 /* SocketHelper.swift in Sources */,
+				86F47743271091270071B79D /* ScoreboardRow.swift in Sources */,
 				86DD6C5226700DFD00B8035D /* MainViewHeader.swift in Sources */,
 				864173A325B289DA00AD5625 /* CategoriesTextField.swift in Sources */,
 				867E0E2D25C05D1400459CF1 /* OnlineGameManager.swift in Sources */,
 				864173D425B34E5D00AD5625 /* DatabaseManager.swift in Sources */,
-				8641740425B382DF00AD5625 /* PointsView.swift in Sources */,
 				86B345C625C0C37F00302A96 /* ScoreboardView.swift in Sources */,
 				8694BD3425C33C7200ED9416 /* Helper.swift in Sources */,
 				867E0E3225C064B400459CF1 /* User.swift in Sources */,
+				86F47741271091140071B79D /* ScoreboardHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +492,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.3;
+				MARKETING_VERSION = 0.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SUPPORTS_MACCATALYST = YES;
@@ -533,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.3;
+				MARKETING_VERSION = 0.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ppc.Zoomigories;
 				PRODUCT_NAME = Zoomigories;
 				SUPPORTS_MACCATALYST = YES;

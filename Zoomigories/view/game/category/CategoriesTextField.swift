@@ -23,12 +23,7 @@ struct CategoriesTextField: View {
             VStack(alignment: .leading) {
                 Text("\(category.number ?? ""). \(category.categoryDescription ?? "")")
                 TextField(category.categoryDescription ?? "", text: $text)
-                    .overlay(
-                        VStack {
-                            Divider()
-                                .offset(x: 0, y: 15)
-                            }
-                    )
+                    .textFieldStyle(.roundedBorder)
                     .disabled(networkManager.stopEditing)
             }
             if networkManager.stopEditing {
@@ -36,12 +31,13 @@ struct CategoriesTextField: View {
             }
         }
         .padding()
-        .border(getBorderColor())
+        .border(getBorderColor(), width: 3)
+        .cornerRadius(5)
     }
     
     private func getBorderColor() -> Color {
         if text.isEmpty {
-            return .black
+            return .primary
         } else {
             if text.starts(with: letter) {
                 return .green

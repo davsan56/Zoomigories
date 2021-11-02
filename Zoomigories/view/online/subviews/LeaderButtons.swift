@@ -22,7 +22,7 @@ struct LeaderButtons: View {
                     .cornerRadius(5)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
-                            .stroke(onlineGameManager.areAllUsersReady ? Color.white : Color.blue, lineWidth: 1)
+                            .stroke(onlineGameManager.areAllUsersReady ? Color.black : Color.blue, lineWidth: 1)
                     )
             }
             .disabled(!onlineGameManager.areAllUsersReady)

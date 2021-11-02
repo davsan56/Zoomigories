@@ -9,11 +9,17 @@ import Foundation
 
 class TimerManager: ObservableObject {
     var timer: Timer = Timer()
-    @Published var timeRemaining = Env.isProduction() ? 180 : 10
+    @Published var timeRemaining = ""
+    var internalSeconds = Env.isProduction() ? 180 : 10 {
+        didSet {
+            timeRemaining = convertSeconds()
+        }
+    }
     @Published var timerDone = false
     
     init() {
         timer = Timer(timeInterval: 1.0, target: self, selector: #selector(subtractTimer), userInfo: nil, repeats: true)
+        timeRemaining = convertSeconds()
     }
     
     func startTimer() {
@@ -21,10 +27,15 @@ class TimerManager: ObservableObject {
     }
     
     @objc func subtractTimer() {
-        timeRemaining -= 1
-        if timeRemaining == 0 {
+        internalSeconds -= 1
+        if internalSeconds == 0 {
             timerDone = true
             timer.invalidate()
         }
+    }
+    
+    func convertSeconds() -> String {
+        let (_, m, s) = (internalSeconds / 3600, (internalSeconds % 3600) / 60, (internalSeconds % 3600) % 60)
+        return ("\(m):\(String(format: "%02d", s))")
     }
 }
